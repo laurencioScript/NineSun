@@ -12,8 +12,7 @@
 
       <div class="container-fluid">
         
-        <div class="row" id="navbar">
-          
+        <div class="row" id="navbar">        
           <nav class="navbar navbar-inverse navbar-static-top">       
             <div class="container">               
               <a class="navbar-brand"  data-toggle="collapse" href="#collapseExample" aria-expand="false" aria-controls="collapseExample">
@@ -21,7 +20,7 @@
               </a><!-- fechamento BOTAO !-->            
               <div class="navbar-form navbar-left" role="search">
                 <div class="form-group">
-                  <input type="text" class="form-control" size="30" placeholder="Search" id="ip_serach">
+                  <input type="text" class="form-control" size="100" placeholder="Search" id="ip_serach">
                 </div><!-- fechamento INPUT !-->
                 <button type="button" id="btn_submit" class="btn btn-default">
                   <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
@@ -46,7 +45,7 @@
         </div> <!-- fechamento ROW NAVBAR !-->
 
         <div class="row" >
-          <div class="row" id="row_content" >
+          <div class="row" id="testeA" >
             <div class="col-md-offset-2 col-md-8" id="content_search">
 
             </div> <!-- fechamento COL-MD-OFFSET-0 !-->
