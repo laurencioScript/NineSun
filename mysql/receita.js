@@ -29,11 +29,18 @@ ID	3-oculto
 var hoteis = [];
 var servicos = [];
 
-hoteis[1] = {nome:"" ,id_tipo: 1, endereco: "", telefone:3132, website: ,email: ,id_servico: 1, classificao:,id_cidade:, id_img:}
-servicos[1] = {wifi_quartos:  ,wifi_lobby: ,psicina: ,estacionamento: ,academia: ,spa: ,bar_no_hotel: ,restaurante: ,pet_permitidos: }
+var hotel = new Object();
+var servico = new Object();
 
-hoteis[0] = {nome: ,id_tipo: , endereco:, telefone:, website:,email:,id_servico:,classificao:,id_cidade:,id_img:}
-servicos[0] = {wifi_quartos: ,wifi_lobby: ,psicina: ,estacionamento: ,academia: ,spa: ,bar_no_hotel: ,restaurante: ,pet_permitidos: }
+hoteis[1] = [hotel.nome = "" ,hotel.id_tipo = "" , hotel.endereco = "" , hotel.telefone = "" , 
+			hotel.website = "" , hotel.email = "" , hotel.id_servico = "" , hotel.classificao = "" ,
+			hotel.id_cidade = "" , hotel.id_img = "" ]
 
-hoteis[2] = {nome:"" ,id_tipo: 1, endereco: "", telefone:3132, website: ,email: ,id_servico: 1, classificao:,id_cidade:, id_img:}
-servicos[2] = {wifi_quartos:  ,wifi_lobby: ,psicina: ,estacionamento: ,academia: ,spa: ,bar_no_hotel: ,restaurante: ,pet_permitidos: }
+servicos[1] = [servico.wifi_quartos = "" , servico.wifi_lobby = "" , servico.psicina = "" , servico.estacionamento = "" ,
+			servico.academia = "" , servico.spa = "" , servico.bar_no_hotel = "" , servico.restaurante = "" , servico.pet_permitidos = ""] 
+
+
+document.write("insert into hoteis(nome,id_tipo,endereco,telefone,website,email,id_servico,classificao,id_cidade,id_img) values('"+hoteis[x][0]+"',"+hoteis[x][1]+"," +
+"'"+hoteis[x][2]+"','"+hoteis[x][3]+"','"+hoteis[x][4]+"','"+hoteis[x][5]+"',"+hoteis[x][6]+","+hoteis[x][7]+","+hoteis[x][8]+","+hoteis[x][9]+");");
+
+
