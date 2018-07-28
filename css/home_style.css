@@ -14,5 +14,20 @@ td{
 	padding-left: 15px;
 }
 
-#testeA{
-padding-bottom: 20px}
+#rodape
+{
+	background-color: #474344;
+	font-family: "Times New Roman", Times, serif;
+	font-color: #d9d9d9;
+}
+#frodape
+{
+	background-color: #766f71;
+	font-family: "Times New Roman", Times, serif;
+	font-color: #d9d9d9;
+}
+
+#limiteImg
+{
+	max-height: 625px;
+}
