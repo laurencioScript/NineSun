@@ -1,0 +1,58 @@
+#img_logo{
+	height: 200px;
+	width: 350px;
+}
+
+#search{
+	margin-top: 160px;
+}
+
+#row_content{
+	padding-bottom: 50px;
+}
+
+#coluna_filter{
+	border-right: 1px solid #A9A9A9	;
+	height: 500px;
+	width: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#btn_city,#btn_classificacao,#btn_acomodidades{
+	padding-right: 25px;
+	margin-top: 20px;
+}
+
+#div_keys{
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	background-color:#D3D3D3;
+}
+
+#btn_key{
+	margin-bottom: 8px;
+	margin-right: 5px;
+}
+
+
+#rodape
+{
+	background-color: #474344;
+	font-family: "Times New Roman", Times, serif;
+	font-color: #d9d9d9;
+	font-size:medium;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+#frodape
+{
+	background-color: #766f71;
+	font-family: "Times New Roman", Times, serif;
+	font-color: #d9d9d9;
+}
+#contato{
+	color: white;
+}

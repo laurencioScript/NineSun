@@ -6,28 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Baixada Hoteis</title>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/index_style.css" rel="stylesheet">
+    <link href="css/search_style.css" rel="stylesheet">
 </head>
-
+<!-- /input-group -->
 <body>
 	<div class="container-fluid">
+		
+		<div class="row" id="row_header">
 
-		<div class="row" id="row_logo">
-			<div class="col-md-offset-3">
+			<div class="col-md-3">
 				<img src="img/logo.png" alt="..." id="img_logo" class="img-rounded">		
 			</div>
-		</div>
 
-		<div class="row" id="row_search">	
-			<div class="col-md-offset-3 col-md-6">	
-				<div class="input-group">
+			<div class="col-md-6" id="search">			
+  				<div class="input-group">
  					<input type="text" class="form-control" id="input_key" placeholder="Encontre o melhor hotel para você, meu consagrado" aria-describedby="sizing-addon1" > 
  					<span class="input-group-btn">
-        				<button class="btn btn-default" type="button" id="btn_search">
+        				<button  class="btn btn-default" type="button" id="btn_search">
         					<span class="glyphicon glyphicon-search"></span>
         				</button>
       				</span>			
-				</div>
+				</div>	
 			</div>
 		</div>
 
@@ -37,25 +36,15 @@
 			</div>
 		</div>
 		
-		<div class="row" id="row_five_btn">	
-			<div class="col-md-offset-3 col-md-7">
-					<button type="button" id="btn_bertioga" class="btn btn-default">Bertioga</button>
-					<button type="button" id="btn_cubatao" class="btn btn-default">Cubatão</button>
-					<button type="button" id="btn_guaruja" class="btn btn-default">Guarujá</button>
-					<button type="button" id="btn_itanhaem" class="btn btn-default">Itanhaém</button>
-					<button type="button" id="btn_mongagua" class="btn btn-default">Mongaguá</button>
+		<div class="row" id="row_content">
+			
+			<div class="col-md-3" id="coluna_filter">
+				<?php
+				include_once'file:///C:/wamp64/www/baixada_Hoteis/php_paginas/column_filter.php';
+				?>	
 			</div>
-		</div>
-
-		<div class="row" id="row_four_btn">	
-			<div class="col-md-offset-3 col-md-5">
-				<div class="row" style="margin:30px 0px 15px 0px;"><!--Barra de Pesquisa-->
-					<button type="button" id="btn_peruibe" class="btn btn-default">Peruíbe</button>
-					<button type="button" id="btn_praia" class="btn btn-default">Praia Grande</button>
-					<button type="button" id="btn_santos" class="btn btn-default">Santos</button>
-					<button type="button" id="btn_sao" class="btn btn-default">São Vicente</button>
-				</div>
-			</div>
+			<div>
+			</div>		
 		</div>
 
 		<div class="row" id="rodape">
@@ -98,10 +87,11 @@
 
 	</div>
 	
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="//code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/cookie.js"></script>
 <script src="js/index_script.js"></script>
+<script type="text/javascript" src="js/search_script.js"></script>
 </body>
 </html>
