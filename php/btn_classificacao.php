@@ -16,7 +16,7 @@
 		if($estrelas[$i]=='5'){
 			$qtd = "<span class=\"glyphicon glyphicon-star\"></span><span class=\"glyphicon glyphicon-star\"></span><span class=\"glyphicon glyphicon-star\"></span><span class=\"glyphicon glyphicon-star\"></span><span class=\"glyphicon glyphicon-star\"></span>";};
 			
-		$txt .="<button class=\"btn btn-primary btn-xs\" type=\"button\" id=\"btn_key\">".$qtd."  "."<span class=\"badge\">x</span></button>";
+		$txt .="<button class=\"btn btn-primary btn-xs btn_divKeys\" type=\"button\" name=\"$estrelas[$i]\" onclick=\"autoDelete('keys_class','#btn_$estrelas[$i]')\" id=\"btn_$estrelas[$i]\"> $qtd <span class=\"badge\">x</span></button>";
 	};
 	
 	echo "$txt";	  

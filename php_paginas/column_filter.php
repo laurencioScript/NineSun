@@ -5,43 +5,43 @@
 
 	<ul class="dropdown-menu">
 	    <li><div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="ipt_bertioga" value="option1">
+				<input class="form-check-input" type="checkbox" id="ipt_bertioga" value="Bertioga">
 				<label class="form-check-label" id="lbl_bertioga">Bertioga</label>			
 		</div></li>
 		<li><div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="ipt_cubatao" value="option1">
+				<input class="form-check-input" type="checkbox" id="ipt_cubatao" value="Cubatão">
 				<label class="form-check-label" id="lbl_cubatao">Cubatão</label>			
 		</div></li>
 		<li><div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="ipt_guaruja" value="option1">
+				<input class="form-check-input" type="checkbox" id="ipt_guaruja" value="Guarujá">
 				<label class="form-check-label" id="lbl_guaruja">Guarujá</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="ipt_itanhaem" value="option1">
+				<input class="form-check-input" type="checkbox" id="ipt_itanhaem" value="Itanhaém">
 				<label class="form-check-label" id="lbl_itanhaem">Itanhaém</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="ipt_mongagua" value="option1">
+				<input class="form-check-input" type="checkbox" id="ipt_mongagua" value="Mongaguá">
 				<label class="form-check-label" id="lbl_mongagua">Mongaguá</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="ipt_peruibe" value="option1">
+				<input class="form-check-input" type="checkbox" id="ipt_peruibe" value="Peruíbe">
 				<label class="form-check-label" id="lbl_peruibe">Peruíbe</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="ipt_praia" value="option1">
+				<input class="form-check-input" type="checkbox" id="ipt_praia" value="Praia_Grande">
 				<label class="form-check-label" id="lbl_praia">Praia Grande</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="ipt_santos" value="option1">
+				<input class="form-check-input" type="checkbox" id="ipt_santos" value="Santos">
 				<label class="form-check-label" id="lbl_santos">Santos</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="ipt_sao" value="option1">
+				<input class="form-check-input" type="checkbox" id="ipt_sao" value="São_Vicente">
 				<label class="form-check-label" id="lbl_sao">São Vicente</label>	
 		</div></li>				
 		<li><div class="col-md-offset-8">
-				<button type="button" id="okClass" class="btn btn-primary btn-sm">OK</button>
+				<button type="button"  id="btn_confirm_city" class="btn btn-primary btn-sm">OK</button>
 		</div></li>
 	</ul>
 </div>
@@ -63,7 +63,7 @@
 		</li>
 	    <li>
 	    	<div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="quatro_estrelas" value="4" >
+				<input class="form-check-input" type="checkbox" id="quatro_estrelas" value="4" >
 				<span class="glyphicon glyphicon-star"></span>
 				<span class="glyphicon glyphicon-star"></span>
 				<span class="glyphicon glyphicon-star"></span>
@@ -72,7 +72,7 @@
 		</li>
 		<li>
 	    	<div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="tres_estrelas" value="3" >
+				<input class="form-check-input" type="checkbox" id="tres_estrelas" value="3" >
 				<span class="glyphicon glyphicon-star"></span>
 				<span class="glyphicon glyphicon-star"></span>
 				<span class="glyphicon glyphicon-star"></span>
@@ -80,20 +80,20 @@
 		</li>
 		<li>
 	    	<div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="duas_estrelas" value="2">
+				<input class="form-check-input" type="checkbox"  id="duas_estrelas" value="2">
 				<span class="glyphicon glyphicon-star"></span>
 				<span class="glyphicon glyphicon-star"></span>
 			</div>					
 		</li>
 		<li>
 	    	<div class="col-md-offset-1">
-				<input class="form-check-input" type="checkbox" name="exampleRadios" id="uma_estrela" value="1">
+				<input class="form-check-input" type="checkbox"  id="uma_estrela" value="1">
 				<span class="glyphicon glyphicon-star"></span>
 			</div>					
 		</li>
 		<li>
 			<div class="col-md-offset-8">
-				<button type="button" id="btn_ok_classificacao " class="btn btn-primary btn-sm" onclick="filter_class()">OK</button>
+				<button type="button" id="btn_confirm_class" class="btn btn-primary btn-sm">OK</button>
 			</div>
 		</li>
 	</ul>
@@ -105,43 +105,43 @@
   	</button>
 	<ul class="dropdown-menu">
 	    <li><div class="col-md-offset-1">
-			<input class="form-check-input" type="checkbox" name="exampleRadios" id="estrela-1" value="option1">
+			<input class="form-check-input" type="checkbox" id="ipt_WifinosQuartos" value="Wifi nos Quartos">
 			<label class="form-check-label" for="exampleRadios1">Wifi nos Quartos</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-			<input class="form-check-input" type="checkbox" name="exampleRadios" id="estrela-1" value="option1">
+			<input class="form-check-input" type="checkbox" id="ipt_WifinoLobby" value="Wifi no Lobby">
 			<label class="form-check-label" for="exampleRadios1">Wifi no Lobby</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-			<input class="form-check-input" type="checkbox" name="exampleRadios" id="estrela-1" value="option1">
+			<input class="form-check-input" type="checkbox" id="ipt_Piscina" value="Piscina">
 			<label class="form-check-label" for="exampleRadios1">Piscina</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-			<input class="form-check-input" type="checkbox" name="exampleRadios" id="estrela-1" value="option1">
+			<input class="form-check-input" type="checkbox" id="ipt_Estacionamento" value="Estacionamento">
 			<label class="form-check-label" for="exampleRadios1">Estacionamento</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-			<input class="form-check-input" type="checkbox" name="exampleRadios" id="estrela-1" value="option1">
+			<input class="form-check-input" type="checkbox" id="ipt_Academia" value="Academia">
 			<label class="form-check-label" for="exampleRadios1">Academia</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-			<input class="form-check-input" type="checkbox" name="exampleRadios" id="estrela-1" value="option1">
+			<input class="form-check-input" type="checkbox" id="ipt_Spa" value="Spa">
 			<label class="form-check-label" for="exampleRadios1">Spa</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-			<input class="form-check-input" type="checkbox" name="exampleRadios" id="estrela-1" value="option1">
-			<label class="form-check-label" for="exampleRadios1">Bar no Hotel</label>	
+			<input class="form-check-input" type="checkbox" id="ipt_BarnoHotel" value="Bar no Hotel">
+			<label class="form-check-label" for="exampleRadios1">Bar no Hotel</label>
 		</div></li>
 		<li><div class="col-md-offset-1">
-			<input class="form-check-input" type="checkbox" name="exampleRadios" id="estrela-1" value="option1">
+			<input class="form-check-input" type="checkbox" id="ipt_Restaurante" value="Restaurante">
 			<label class="form-check-label" for="exampleRadios1">Restaurante</label>	
 		</div></li>
 		<li><div class="col-md-offset-1">
-			<input class="form-check-input" type="checkbox" name="exampleRadios" id="estrela-1" value="option1">
+			<input class="form-check-input" type="checkbox" id="ipt_PetPermitido" value="Pet Permitido">
 			<label class="form-check-label" for="exampleRadios1">Pet Permitido</label>	
 		</div></li>				
 		<li><div class="col-md-offset-8">
-			<button type="button" id="okClass" class="btn btn-primary btn-sm">OK</button>
+			<button type="button" id="btn_confirm_acomidades" class="btn btn-primary btn-sm">OK</button>
 		</div></li>
 	</ul>
 </div>	

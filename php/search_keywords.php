@@ -11,7 +11,7 @@ $data_reader = mysqli_query($connection,$view_search);
 while ($data = mysqli_fetch_row($data_reader)) {
 
   echo "<div class=\"row\">
-          <button type=\"button\" id=\"btn_key\" class=\"btn btn-link\">$data[0]</button> \n
+          <button type=\"button\" onclick=\"pesquisarLink('$data[0]')\" id=\"btn_key\" class=\"btn btn-link\">$data[0]</button> \n
           <style>
             #keywords{
               border: 1px solid #A9A9A9;} 
