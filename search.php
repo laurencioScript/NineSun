@@ -13,13 +13,12 @@
 	<div class="container-fluid">
 		
 		<div class="row" id="row_header">
-
-			<div class="col-md-3">
-				<img src="img/logo.png" alt="..." id="img_logo" class="img-rounded">		
+			<div class="col-md-3" id="div_img">
+				<img src="img/logo.png" alt="..." class="img-responsive" id="img_logo" class="">		
 			</div>
 
-			<div class="col-md-6" id="search">			
-  				<div class="input-group">
+			<div class="col-md-7" id="div_search">			
+  				<div class="input-group" id="input_search">
  					<input type="text" class="form-control" id="input_key" placeholder="Encontre o melhor hotel para você, meu consagrado" aria-describedby="sizing-addon1" > 
  					<span class="input-group-btn">
         				<button  class="btn btn-default" type="button" id="btn_search">
@@ -36,15 +35,74 @@
 			</div>
 		</div>
 		
+
 		<div class="row" id="row_content">
 			
 			<div class="col-md-3" id="coluna_filter">
 				<?php
-				include_once'file:///C:/wamp64/www/baixada_Hoteis/php_paginas/column_filter.php';
+				include_once'/php_paginas/column_filter.php';
 				?>	
 			</div>
-			<div>
-			</div>		
+
+			<!--Grid-->
+			<div class="col-md-10" id="coluna_grid">	
+				<div class="col-md-2 item_Grid" >
+					<img src="img/no_img.png" class="img-responsive img_Grid">					
+					<p class="label_NomeHotel">Nome do Hotel</p>
+					<p class="labels_Grid">Endereço: </p>
+					<p class="labels_Grid">Telefone:</p>
+					<p class="labels_Grid">Email: </p>	
+				</div>
+				<div class="col-md-2 item_Grid" >
+					<img src="img/no_img.png" class="img-responsive img_Grid">					
+					<p class="label_NomeHotel">Nome do Hotel</p>
+					<p class="labels_Grid">Endereço: </p>
+					<p class="labels_Grid">Telefone:</p>
+					<p class="labels_Grid">Email: </p>	
+				</div>
+				<div class="col-md-2 item_Grid" >
+					<img src="img/no_img.png" class="img-responsive img_Grid">					
+					<p class="label_NomeHotel">Nome do Hotel</p>
+					<p class="labels_Grid">Endereço: </p>
+					<p class="labels_Grid">Telefone:</p>
+					<p class="labels_Grid">Email: </p>	
+				</div>
+				<div class="col-md-2 item_Grid" >
+					<img src="img/no_img.png" class="img-responsive img_Grid">					
+					<p class="label_NomeHotel">Nome do Hotel</p>
+					<p class="labels_Grid">Endereço: </p>
+					<p class="labels_Grid">Telefone:</p>
+					<p class="labels_Grid">Email: </p>	
+				</div>
+				<div class="col-md-2 item_Grid" >
+					<img src="img/no_img.png" class="img-responsive img_Grid">					
+					<p class="label_NomeHotel">Nome do Hotel</p>
+					<p class="labels_Grid">Endereço: </p>
+					<p class="labels_Grid">Telefone:</p>
+					<p class="labels_Grid">Email: </p>	
+				</div>
+				<div class="col-md-2 item_Grid" >
+					<img src="img/no_img.png" class="img-responsive img_Grid">					
+					<p class="label_NomeHotel">Nome do Hotel</p>
+					<p class="labels_Grid">Endereço: </p>
+					<p class="labels_Grid">Telefone:</p>
+					<p class="labels_Grid">Email: </p>	
+				</div>
+				<div class="col-md-2 item_Grid" >
+					<img src="img/no_img.png" class="img-responsive img_Grid">					
+					<p class="label_NomeHotel">Nome do Hotel</p>
+					<p class="labels_Grid">Endereço: </p>
+					<p class="labels_Grid">Telefone:</p>
+					<p class="labels_Grid">Email: </p>	
+				</div>
+				<div class="col-md-2 item_Grid" >
+					<img src="img/no_img.png" class="img-responsive img_Grid">					
+					<p class="label_NomeHotel">Nome do Hotel</p>
+					<p class="labels_Grid">Endereço: </p>
+					<p class="labels_Grid">Telefone:</p>
+					<p class="labels_Grid">Email: </p>	
+				</div>
+			</div> 
 		</div>
 
 		<div class="row" id="rodape">
@@ -88,7 +146,7 @@
 	</div>
 	
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/jquery-3.3.1.min"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/cookie.js"></script>
 <script src="js/index_script.js"></script>

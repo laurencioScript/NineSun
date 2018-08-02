@@ -38,12 +38,12 @@ function sugestao_keywords(value){
 //original
 function search(id,value){
 
-$(id).click(function(){
-	var dataAtual = new Date();
-	setCookie('cidade',value,dataAtual);
-	setCookie('keyword',get_textContent(id),dataAtual);
-	window.location.href = "http://localhost/baixada_Hoteis/search.php?";
-});
+	$(id).click(function(){
+		var dataAtual = new Date();
+		setCookie('cidade',value,dataAtual);
+		setCookie('keyword',get_textContent(id),dataAtual);
+		window.location.href = "search.php?";
+	});
 
 }
 

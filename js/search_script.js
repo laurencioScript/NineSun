@@ -8,7 +8,12 @@ function add_keyCity(path,value){
 			type: 'POST',
 			dataType: 'html',
 			data:{key : value},
-			success: function(msg){set_html('#keys_city',msg)} 	
+			success: function(msg){
+				set_html('#keys_city',msg);
+				$("#keys_city").ready(function(){
+					searchDataBase(2);
+				});
+			} 	
 });}
 
 //faz uma chamada via ajax atualizando a div 'keyword' adicionando o Value digitado
@@ -86,22 +91,15 @@ function get_Value_CheckBoxs(array){
 
 //================================================================================
 
-
-var is_city = getCookie('cidade');
-var keyword = getCookie('keyword');
-
-
-
 //recebe o valor do cookie e passa para a função correta
 function analzye_Cookie(is_city,keyword){
-	if(is_city==true){
+	if(is_city){
 		add_keyCity('btn_city.php',keyword);
-		add_Value_CheckBox_City(keyword,true);
+		add_Value_CheckBox_City(keyword,true);	
 	}
 	else{
 		set_value('#input_key',keyword);
 		add_keyInput(keyword);
-		console.log('oi');
 	}
 };
 
@@ -206,8 +204,13 @@ function add_Value_Div_Acomidades(){
 
 
 $(document).ready(function(){
+	
 	$('#btn_confirm_city').click(function(){
+		
 		add_Value_Div_City();
+		
+		
+		
 	});
 	$('#btn_confirm_class').click(function(){
 		add_Value_Div_Classificao();
@@ -215,9 +218,21 @@ $(document).ready(function(){
 	$('#btn_confirm_acomidades').click(function(){
 		add_Value_Div_Acomidades();
 	});
+
+	var is_city = getCookie('cidade');
+	var keyword = getCookie('keyword');
 	
 	analzye_Cookie(is_city,keyword);
+	
+/*
+	$("#keys_city").ready(function(){
+	searchDataBase(2);
+	});
+*/
+
+	
 })
+
 
 
 function autoDelete(local,id){
@@ -237,4 +252,43 @@ function autoDelete(local,id){
 		
 }
 
+function searchDataBase(value){
+	var colecao;
+
+	if(value==1){
+		colecao = document.getElementById("keyword");
+	}
+	else if(value==2){
+		colecao = document.getElementById("keys_city");
+	}
+	else if(value==3){
+		colecao = document.getElementById("keys_class");
+	}
+	else if(value==4){
+		colecao = document.getElementById("keys_acomodidades");
+	}
+
+	colecao = returnColecao(colecao);
+
+	$.ajax({
+		url: 'php/search_filter_db.php',		
+		type: 'POST',
+		dataType: 'html',
+		data:{key : colecao},
+		success: function(msg){set_html('#coluna_grid',msg);} 	
+	});
+}
+
+function returnColecao(value){
+	var x = value.children.length;
+	x--;
+	var colecao = [];
+	for (var i = 0; i <= x; i++) {
+		var palavra = value.children[i];
+		palavra = palavra.name;
+		console.log(palavra)
+		colecao.push(palavra);
+	}
+	return colecao;
+}
 
