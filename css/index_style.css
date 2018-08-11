@@ -1,40 +1,31 @@
-#img_logo{
-	max-height: 300px;
-	margin-left: 15px;
+.visao{
+	border:1px solid black;
+}
+
+#div_logo{
+	height: 200px
+}
+
+#row_header{
+	margin-top: 100px;
 }
 
 
-#row_five_btn{
-	margin-top:30px;
-	margin-left: 30px;
-}
 
-#row_four_btn{
-	margin-left: 60px;
-	margin-bottom: 400px;
-}
 
-#btn_bertioga,#btn_cubatao,#btn_guaruja,#btn_itanhaem,#btn_mongagua,#btn_peruibe,#btn_praia,#btn_santos,#btn_sao{
-	margin-right: 30px;
+
+.rodape_right{
+	position: absolute;
+	left: 89%;
+	top: 95%;
 
 }
 
-#rodape
-{
-	background-color: #474344;
-	font-family: "Times New Roman", Times, serif;
-	font-color: #d9d9d9;
-	font-size:medium;
-	padding-top: 60px;
-	padding-bottom: 20px;
-}
-#frodape
-{
-	background-color: #766f71;
-	font-family: "Times New Roman", Times, serif;
-	font-color: #d9d9d9;
+
+
+.rodape_left{
+	position: absolute;
+	left: 1	%;
+	top: 95%;
 }
 
-#contato{
-	color: white;
-}

@@ -275,7 +275,8 @@ function searchDataBase(value){
 		type: 'POST',
 		dataType: 'html',
 		data:{key : colecao},
-		success: function(msg){set_html('#coluna_grid',msg);} 	
+		success: function(msg){set_html('#coluna_grid',msg);
+				} 	
 	});
 }
 

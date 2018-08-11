@@ -46,62 +46,7 @@
 
 			<!--Grid-->
 			<div class="col-md-10" id="coluna_grid">	
-				<div class="col-md-2 item_Grid" >
-					<img src="img/no_img.png" class="img-responsive img_Grid">					
-					<p class="label_NomeHotel">Nome do Hotel</p>
-					<p class="labels_Grid">Endereço: </p>
-					<p class="labels_Grid">Telefone:</p>
-					<p class="labels_Grid">Email: </p>	
-				</div>
-				<div class="col-md-2 item_Grid" >
-					<img src="img/no_img.png" class="img-responsive img_Grid">					
-					<p class="label_NomeHotel">Nome do Hotel</p>
-					<p class="labels_Grid">Endereço: </p>
-					<p class="labels_Grid">Telefone:</p>
-					<p class="labels_Grid">Email: </p>	
-				</div>
-				<div class="col-md-2 item_Grid" >
-					<img src="img/no_img.png" class="img-responsive img_Grid">					
-					<p class="label_NomeHotel">Nome do Hotel</p>
-					<p class="labels_Grid">Endereço: </p>
-					<p class="labels_Grid">Telefone:</p>
-					<p class="labels_Grid">Email: </p>	
-				</div>
-				<div class="col-md-2 item_Grid" >
-					<img src="img/no_img.png" class="img-responsive img_Grid">					
-					<p class="label_NomeHotel">Nome do Hotel</p>
-					<p class="labels_Grid">Endereço: </p>
-					<p class="labels_Grid">Telefone:</p>
-					<p class="labels_Grid">Email: </p>	
-				</div>
-				<div class="col-md-2 item_Grid" >
-					<img src="img/no_img.png" class="img-responsive img_Grid">					
-					<p class="label_NomeHotel">Nome do Hotel</p>
-					<p class="labels_Grid">Endereço: </p>
-					<p class="labels_Grid">Telefone:</p>
-					<p class="labels_Grid">Email: </p>	
-				</div>
-				<div class="col-md-2 item_Grid" >
-					<img src="img/no_img.png" class="img-responsive img_Grid">					
-					<p class="label_NomeHotel">Nome do Hotel</p>
-					<p class="labels_Grid">Endereço: </p>
-					<p class="labels_Grid">Telefone:</p>
-					<p class="labels_Grid">Email: </p>	
-				</div>
-				<div class="col-md-2 item_Grid" >
-					<img src="img/no_img.png" class="img-responsive img_Grid">					
-					<p class="label_NomeHotel">Nome do Hotel</p>
-					<p class="labels_Grid">Endereço: </p>
-					<p class="labels_Grid">Telefone:</p>
-					<p class="labels_Grid">Email: </p>	
-				</div>
-				<div class="col-md-2 item_Grid" >
-					<img src="img/no_img.png" class="img-responsive img_Grid">					
-					<p class="label_NomeHotel">Nome do Hotel</p>
-					<p class="labels_Grid">Endereço: </p>
-					<p class="labels_Grid">Telefone:</p>
-					<p class="labels_Grid">Email: </p>	
-				</div>
+				
 			</div> 
 		</div>
 
