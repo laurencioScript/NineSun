@@ -1,18 +1,6 @@
-function get_textContent(id){
-  
-  return $(id).text();
-
-}
-
 function limpa_div_keywords(value){
-	if(value=='0')
-		document.querySelector('#keywords').innerHTML= "";
-}
-
-function verifica_value(value){
-	if(value.length>0)
-		return true;
-	return false;
+	if(value =='0')
+		$("#keywords").html(function(){return ""});;
 }
 
 function search(value){
@@ -23,12 +11,17 @@ function search(value){
 
 }
 
-function lista_De_Sugestao(value){
-	
+function busca_resultados_antecipado(value){
+	if(!value){
+
+	}
+	else{
 	$.ajax({
 	url: 'php/lista_De_Sugestao.php',		
 	type: 'POST',
 	dataType: 'html',
 	data:{keyword : value},
-	success: function(msg){ $("#keywords").html(function(){return msg});} 	
-});}
+	success: function(msg){ $("#keywords").html(function(){return msg});}});	
+	}
+	 	
+}

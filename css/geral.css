@@ -1,0 +1,80 @@
+#itemInterno
+{
+	background-color: #e6e6e6;
+	box-shadow: 8px 8px 5px grey;
+	border-radius:  5px;
+}
+#img
+{
+	max-width: 200px;
+	max-height: 200px;
+	border-bottom: 1px solid black;
+}
+p
+{
+	text-align: center;
+	color: #3366cc;
+}
+#pEdit
+{
+	font-size: 10px;
+	text-align: left;
+}
+#botao
+{
+	margin: 10px 0px 0px 0px;
+}
+#apresentacao
+{
+	font-family: lucida console;
+	font-size: 20px;
+	color: #4d88ff;
+}
+#row-nav
+{
+	background-color: #262626;
+	/*margin-bottom: 200px; */
+}
+#col-nav
+{
+	margin: 10px 0px 5px 60px;
+}
+
+#back-duvidas
+{
+	background-color: #ffb84d;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+h2
+{
+	margin-left: 20px;
+}
+#cabeca
+{
+	background-color: #262626;
+	margin: 10px 0px 5px 0px;
+}
+#duvidas
+{
+	margin-top: 30px;
+}
+#icon-contato
+{
+	margin-top: 100px;
+}
+
+
+.rodape_right{
+	position: absolute;
+	left: 89%;
+	margin-top: 25px;
+
+}
+.rodape_left{
+	position: absolute;
+	left: 1	%;
+	margin-top: 25px;
+}
+

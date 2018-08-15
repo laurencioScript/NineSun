@@ -9,7 +9,8 @@ function add_keyCity(path,value){
 			dataType: 'html',
 			data:{key : value},
 			success: function(msg){
-				set_html('#keys_city',msg);
+				$("#keys_city").html(function(){return msg});
+				
 				$("#keys_city").ready(function(){
 					searchDataBase(2);
 				});
@@ -23,7 +24,7 @@ function add_keyInput(value){
 			type: 'POST',
 			dataType: 'html',
 			data:{key : value},
-			success: function(msg){set_html('#keyword',msg);} 	
+			success: function(msg){ $("#keyword").html(function(){return msg});} 	
 });}
 
 // Passa os valores a serem atualizandos na div de Classificação
@@ -33,8 +34,9 @@ function add_keyClassificacao(value){
 		type: 'POST',
 		dataType: 'html',
 		data:{estrelas : value},
-		success: function(msg){set_html('#keys_class',msg);} 	
-	});}
+		success: function(msg){
+			$("#keys_class").html(function(){return msg});
+		}})}
 
 function add_keyAcomidade(value){
 	$.ajax({
@@ -42,8 +44,9 @@ function add_keyAcomidade(value){
 		type: 'POST',
 		dataType: 'html',
 		data:{acomidades : value},
-		success: function(msg){set_html('#keys_acomodidades',msg);} 	
-	});}			
+		success: function(msg){
+			$("#keys_acomodidades").html(function(){return msg});
+		}})}			
 
 //================================================================================
 
@@ -51,14 +54,14 @@ function add_keyAcomidade(value){
 
 // Se o valor da Label for o mesmo que o Keyword ira acessar o Input e add o Value
 function comparar_CheckBox(input,keyword){
-	if(get_value(input) == keyword)
+	if($(input).val() == keyword)
 		return true
 	return false	
 };
 
 // Atraves do Id add a propriedade checked o value (true || false)
 function set_CheckBox(id,value){
-	document.querySelector(id).checked=value;
+	document.querySelector(id).checked = value;
 };
 
 // Analisa-se o checkBox passado atraves da ID foi selecionado returnando true
@@ -80,27 +83,25 @@ function get_Value_CheckBoxs(array){
 		
 		var input = inputs[i];
 		if(get_CheckBox(input)){
-			inputs_value.push(get_value(input));
+			inputs_value.push($(input).val());
 		}
 	}
 
 	return inputs_value;
 }
 
-
-
 //================================================================================
 
 //recebe o valor do cookie e passa para a função correta
-function analzye_Cookie(is_city,keyword){
-	if(is_city){
-		add_keyCity('btn_city.php',keyword);
-		add_Value_CheckBox_City(keyword,true);	
+function analzye_Cookie(keyword){
+	if(keyword){
+	$("#input_key").val(keyword);  
+	add_keyInput(keyword);
+	searchDataBase(1);
+	deleteCookie("keyword");
+	
 	}
-	else{
-		set_value('#input_key',keyword);
-		add_keyInput(keyword);
-	}
+
 };
 
 //
@@ -175,7 +176,7 @@ function add_Value_Div_City(){
 	if(inputs_value.length > 0)
 		add_keyCity('btn_city.php',inputs_value);
 	else
-		set_html('#keys_city','');
+		 $('#keys_city').html(function(){return ""});
 };
 
 function add_Value_Div_Classificao(){
@@ -186,7 +187,7 @@ function add_Value_Div_Classificao(){
 	if(inputs_value.length>0)
 		add_keyClassificacao(inputs_value);
 	else
-		set_html('#keys_class','');
+		$('#keys_class').html(function(){return ""});
 };
 
 function add_Value_Div_Acomidades(){
@@ -199,19 +200,15 @@ function add_Value_Div_Acomidades(){
 	if(inputs_value.length>0)
 		add_keyAcomidade(inputs_value);
 	else
-		set_html('#keys_acomodidades','');
+		$('#keys_acomodidades').html(function(){return ""});
 };
-
 
 $(document).ready(function(){
 	
-	$('#btn_confirm_city').click(function(){
-		
-		add_Value_Div_City();
-		
-		
-		
+	$('#btn_confirm_city').click(function(){	
+		add_Value_Div_City();	
 	});
+
 	$('#btn_confirm_class').click(function(){
 		add_Value_Div_Classificao();
 	});
@@ -219,21 +216,11 @@ $(document).ready(function(){
 		add_Value_Div_Acomidades();
 	});
 
-	var is_city = getCookie('cidade');
 	var keyword = getCookie('keyword');
 	
-	analzye_Cookie(is_city,keyword);
-	
-/*
-	$("#keys_city").ready(function(){
-	searchDataBase(2);
-	});
-*/
-
+	analzye_Cookie(keyword);
 	
 })
-
-
 
 function autoDelete(local,id){
 	
@@ -242,7 +229,7 @@ function autoDelete(local,id){
 	document.querySelector(id).remove();
 
 	if(local=='keyword')
-		set_value('#input_key','');
+		$('#input_key').val("");
 	if(local=='keys_city')
 		add_Value_CheckBox_City(btn_name,false);		
 	if(local=='keys_class')
@@ -256,7 +243,7 @@ function searchDataBase(value){
 	var colecao;
 
 	if(value==1){
-		colecao = document.getElementById("keyword");
+		colecao = getCookie('keyword');
 	}
 	else if(value==2){
 		colecao = document.getElementById("keys_city");
@@ -267,16 +254,20 @@ function searchDataBase(value){
 	else if(value==4){
 		colecao = document.getElementById("keys_acomodidades");
 	}
-
-	colecao = returnColecao(colecao);
-
+	
+	if(value!=1){
+		colecao = returnColecao(colecao);
+	}
+	console.log(colecao)
 	$.ajax({
 		url: 'php/search_filter_db.php',		
 		type: 'POST',
 		dataType: 'html',
-		data:{key : colecao},
-		success: function(msg){set_html('#coluna_grid',msg);
-				} 	
+		data:{key : colecao,
+			  tipo: value},
+		success: function(msg){
+			$('#coluna_grid').html(function(){return ""});
+			$('#coluna_grid').html(function(){return msg});} 	
 	});
 }
 
@@ -287,7 +278,6 @@ function returnColecao(value){
 	for (var i = 0; i <= x; i++) {
 		var palavra = value.children[i];
 		palavra = palavra.name;
-		console.log(palavra)
 		colecao.push(palavra);
 	}
 	return colecao;

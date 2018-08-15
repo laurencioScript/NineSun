@@ -3,7 +3,8 @@
 }
 
 #div_logo{
-	height: 200px
+	/*o que estava atrapalhando a responsividade da img/logo*/
+	/*height: 200px*/
 }
 
 #row_header{
@@ -28,4 +29,3 @@
 	left: 1	%;
 	top: 95%;
 }
-
