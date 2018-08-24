@@ -1,18 +1,35 @@
-#img_logo{
-	border:1px solid black;
-
-}
-#input_search{
-	padding: 50px 20px 0px 30px;
+/*  header  */
+header{
+	background-color: black;
 }
 
-#row_content{
+header img{
+	margin-left: 25px;
+}
+
+header h1{
+	display: inline;
+}
+
+footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+}
+
+footer #bug{
+	text-align: right;
+}
+
+article{
 	margin-top: 5px;
 	padding-bottom: 50px;
 }
 
-.teste{
-	border:1px solid black;	
+/* ID */
+
+#input_search{
+	padding: 40px 20px 0px 30px;
 }
 
 #coluna_filter{
@@ -35,6 +52,12 @@
 	padding-bottom: 15px;
 	padding-left: 10px;
 	background-color:#D3D3D3;
+}
+
+/* CLASS */
+
+.teste{
+	border:1px solid black;	
 }
 
 .btn_divKeys{

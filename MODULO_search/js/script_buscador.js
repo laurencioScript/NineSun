@@ -55,22 +55,3 @@ $('#btn_search').click(function(){
 	if(value.length > 0)
 		search(value);	
 });
-
-$('#btn_fale_conosco').click(function(){	
-
-	window.location.href = "fale_conosco.php";
-});
-
-$('#btn_contato').click(function(){	
-
-	window.location.href = "contato.php";
-});
-
-$('#btn_duvidas').click(function(){	
-
-	window.location.href = "duvidas.php";
-});
-
-$('#btn_sobre').click(function(){	
-	window.location.href = "sobre.php";
-});

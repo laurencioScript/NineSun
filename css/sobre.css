@@ -1,0 +1,31 @@
+h1{
+	display: inline;
+}
+footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+}
+figure
+{
+	margin: 20px 90px 30px 90px;
+	background-color: #e6e6e6e6; 
+	border-radius: 5px;
+}
+figcaption
+{
+	text-align: center;
+	margin-top: 10px
+}
+figure img
+{
+	border-radius: 15px;
+	padding: 20px 20px 5px 20px;
+}
+h2
+{
+	background-color: #bfbfbfbf;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 25px;
+	margin-left: 0px;
+}

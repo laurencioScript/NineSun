@@ -1,0 +1,31 @@
+footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+}
+h2
+{
+	color: #FDAD00;
+}
+.apresentacao
+{
+	font-family: lucida console;
+	font-size: 15px;
+	color: #4d88ff;
+}
+#back-fale
+{
+	background-color: #262626;
+	padding: 5px 0px 15px 0px;
+	margin: 10px 0px 30px 0px;
+}
+.label_campos
+{
+	padding-top: 10px;
+}
+
+#botao
+{
+	margin: 10px 0px 0px 0px;
+	/* talvez apareça emoutro lugar*/
+}

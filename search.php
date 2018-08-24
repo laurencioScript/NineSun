@@ -7,21 +7,27 @@
     <title>Baixada Hoteis</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/search_style.css" rel="stylesheet">
+    <link href="css/style_grid.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/geral.css">
 </head>
 <!-- /input-group -->
 <body>
-	<div class="container-fluid">
+	<div class="container-fluid" id="container-fluido">
 		
-		<div class="row" id="row_header">
-			<div class="col-md-3" id="div_img">
-				<img src="img/logo.png" alt="..." class="img-responsive" id="img_logo" class="">		
-			</div>
+		<div class="row" id="cabeca"> <!-- row_header -->
+			<!-- <div class="row" id="cabeca"> -->
+				<div class="col-md-2 col-xs-4 col-sm-2">
+					<a href="index.php">
+					<img src="img/Nine Sun logo.png" class="img-responsive" alt="img logo">
+					</a>
+				</div>
+			<!-- </div> -->
 
 			<div class="col-md-7" id="div_search">			
   				<div class="input-group" id="input_search">
  					<input type="text" class="form-control" id="input_key" placeholder="Encontre o melhor hotel para você, meu consagrado" aria-describedby="sizing-addon1" > 
  					<span class="input-group-btn">
-        				<button  class="btn btn-default" type="button" id="btn_search">
+        				<button  class="btn btn-warning" type="button" id="btn_search">
         					<span class="glyphicon glyphicon-search"></span>
         				</button>
       				</span>			
@@ -47,46 +53,23 @@
 			<!--Grid-->
 			<div class="col-md-10" id="coluna_grid">	
 				
+				
 			</div> 
 		</div>
 
-		<div class="row" id="rodape">
-	        <div class="col-md-3">
-		         <ul id="contato" style="list-style-type:none">
-  					<li>Contato</li>
-  					<li>Email: baixahoteis@gmail.com</li>
-  					<li>Telefone: (xx) xxxx-xxxx</li>
-				</ul> 		        
-	        </div><!-- fechamento COL-MD-OFFSET-1 !-->
-	            
-	        <div class="col-md-offset-2 col-md-3">
-	            <ul id="contato" style="list-style-type:none">
-  					<li><a href="">Fale Conosco</a></li>
-  					<li><a href="">Tire Duvidas</a></li>
-				</ul>
-	        </div><!-- fechamento COL-MD-OFFSET-1 !-->
+		<div class="row">
+			<div id="rodape"> 
+			<div class="col-md-4 col-xs-4 col-sm-4">
+				<button type="button" class="btn btn-link colo_btn" id="btn_fale_conosco">Fale Conosco</button>
+				<button type="button" class="btn btn-link" id="btn_duvidas">Duvidas</button>	
+			</div>	
 
-	        <div class="col-md-offset-1 col-md-2">       
-	            <p style="color: #d9d9d9;">
-	                Site Desenvolvido por Lucas Marques, Luis Carlos, Rodrigo Santos e Gabriel Laurencio, para o exercicio e efetivação do projeto de iniciação Cientifica.
-	            </p>
-	        </div><!-- fechamento COL-MD-OFFSET-1 !-->
-	    </div>
-	    
-	    <div class="row" id="frodape">
-	    	<div class="col-md-offset-4 col-md-4">
-	    		<br>
-	    		<br>
-	    		<center>
-		    		<strong>
-		    			<p>Logo Pequeno</p>
-		    		</strong>
-		    		<small>
-		    			<p>Direitos autorais 2018 (marca) | Todos os direitos reservados. </p>
-		    		</small>
-	    		</center>
-	    	</div>
-	    </div>
+			<div class="col-md-offset-5 col-md-3 col-xs-offset-3 col-xs-3 col-sm-4">
+				<button type="button" class="btn btn-link" id="btn_contato">Contato</button>
+				<button type="button" class="btn btn-link" id="btn_sobre">Sobre</button>	
+			</div>	
+			</div>	
+		</div>
 
 	</div>
 	

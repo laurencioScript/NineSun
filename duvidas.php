@@ -13,7 +13,7 @@
 	<div class="row" id="cabeca">
 		<div class="col-md-2 col-xs-4 col-sm-2">
 			<a href="index.php">
-			<img src="img/Nine Sun logo.png" class="img-responsive">
+			<img src="img/Nine Sun logo.png" class="img-responsive" alt="img logo">
 			</a>
 		</div>
 	</div>
@@ -77,21 +77,24 @@
 		</div>
 	 </div>
 
-	 	<div class="row" style="margin-top: 500px;" >
+	 	<div class="row">
+			<div id="rodape"> 
 			<div class="col-md-4 col-xs-4 col-sm-4">
-				<button type="button" class="btn btn-link colo_btn">Fale Conosco</button>
-				<button type="button" class="btn btn-link">Duvidas</button>	
+				<button type="button" class="btn btn-link colo_btn" id="btn_fale_conosco">Fale Conosco</button>
+				<button type="button" class="btn btn-link" id="btn_duvidas">Duvidas</button>	
 			</div>	
 
 			<div class="col-md-offset-5 col-md-3 col-xs-offset-3 col-xs-3 col-sm-4">
-				<button type="button" class="btn btn-link">Contato</button>
-				<button type="button" class="btn btn-link">Sobre</button>	
-			</div>		
+				<button type="button" class="btn btn-link" id="btn_contato">Contato</button>
+				<button type="button" class="btn btn-link" id="btn_sobre">Sobre</button>	
+			</div>	
+			</div>	
 		</div>
 	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="//code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index_script.js"></script>
 </body>
 </html>

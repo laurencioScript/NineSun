@@ -9,6 +9,7 @@
     <title>Nine Sun</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/index_style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/geral.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
 		<!-- Row Cabeçalho -->
 		<div class="row" id="row_header">
 			<div class="col-md-offset-4 col-md-4" id="div_logo">
-				<img src="img/logo_04.png" class="img-responsive" alt="Imagem responsiva">	
+				<img src="img/logo_04.png" class="img-responsive" alt="img logo">	
 			</div>
 		</div>
 		
@@ -44,22 +45,25 @@
 		</div>
 			
 		<!-- Row Rodape -->
-		<div class="" >
-			<div class="rodape_left">
-				<button type="button" class="btn btn-link colo_btn">Fale Conosco</button>
-				<button type="button" class="btn btn-link">Duvidas</button>	
+		<div class="row">
+			<div id="rodape"> 
+			<div class="col-md-4 col-xs-4 col-sm-4">
+				<button type="button" class="btn btn-link colo_btn" id="btn_fale_conosco">Fale Conosco</button>
+				<button type="button" class="btn btn-link" id="btn_duvidas">Duvidas</button>	
 			</div>	
-			<div class="rodape_right">
-				<button type="button" class="btn btn-link">Contato</button>
-				<button type="button" class="btn btn-link">Sobre</button>	
-			</div>		
-	    </div><!-- Row Rodape -->
+
+			<div class="col-md-offset-5 col-md-3 col-xs-offset-3 col-xs-3 col-sm-4">
+				<button type="button" class="btn btn-link" id="btn_contato">Contato</button>
+				<button type="button" class="btn btn-link" id="btn_sobre">Sobre</button>	
+			</div>	
+			</div>	
+		</div>
+		<!-- Row Rodape -->
 	    
 	    
 	</div><!-- Container -->
 	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="//code.jquery.com/jquery.js"></script>
+<script src="js/jquery-3.3.1.min"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/cookie.js"></script>
 <script src="js/barra_de_pesquisa.js"></script>

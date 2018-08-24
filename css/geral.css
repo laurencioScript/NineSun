@@ -54,7 +54,7 @@ h2
 #cabeca
 {
 	background-color: #262626;
-	margin: 10px 0px 5px 0px;
+	margin: 0px 0px 5px 0px;
 }
 #duvidas
 {
@@ -78,3 +78,25 @@ h2
 	margin-top: 25px;
 }
 
+#container-fluido
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.form-control:focus
+{
+	border-color: #fdad00;
+}
+
+#rodape
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.center-image
+{
+	max-height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
