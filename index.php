@@ -9,13 +9,15 @@
     <title>Nine Sun</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/index_style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/header_footer.css">
     <link rel="stylesheet" type="text/css" href="css/geral.css">
 </head>
 
 <body>
+
 	<div class="container-fluid">
 		
-		<!-- Row Cabeçalho -->
+		<!-- LOLO NINE SUN -->
 		<div class="row" id="row_header">
 			<div class="col-md-offset-4 col-md-4" id="div_logo">
 				<img src="img/logo_04.png" class="img-responsive" alt="img logo">	
@@ -42,31 +44,15 @@
   					<div id="keywords"></div>
 				</div>
 			</div><!-- Row Barra de Sugestão -->
-		</div>
-			
-		<!-- Row Rodape -->
-		<div class="row">
-			<div id="rodape"> 
-			<div class="col-md-4 col-xs-4 col-sm-4">
-				<button type="button" class="btn btn-link colo_btn" id="btn_fale_conosco">Fale Conosco</button>
-				<button type="button" class="btn btn-link" id="btn_duvidas">Duvidas</button>	
-			</div>	
-
-			<div class="col-md-offset-5 col-md-3 col-xs-offset-3 col-xs-3 col-sm-4">
-				<button type="button" class="btn btn-link" id="btn_contato">Contato</button>
-				<button type="button" class="btn btn-link" id="btn_sobre">Sobre</button>	
-			</div>	
-			</div>	
-		</div>
-		<!-- Row Rodape -->
-	    
-	    
+		</div> 
 	</div><!-- Container -->
-	
-<script src="js/jquery-3.3.1.min"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/cookie.js"></script>
-<script src="js/barra_de_pesquisa.js"></script>
-<script src="js/index_script.js"></script>
+			
+	<?php include_once("php/footer.php"); ?>
+	      
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/cookie.js"></script>
+	<script src="js/barra_de_pesquisa.js"></script>
+	<script src="js/index.js"></script>
 </body>
 </html>

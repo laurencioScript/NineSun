@@ -1,6 +1,8 @@
 /*  header  */
 header{
-	background-color: black;
+	background-color: #333;
+	z-index: 1;
+	max-height: 132px;
 }
 
 header img{
@@ -11,25 +13,37 @@ header h1{
 	display: inline;
 }
 
+
+article{
+	z-index: -1;
+	position: absolute;	
+	margin-top: 5px;
+	
+}
+
 footer {
-    position:relative;
-    bottom:0;
-    width:100%;
+	position:fixed;
+	bottom:0%;
+	width:100%; 
 }
 
 footer #bug{
 	text-align: right;
 }
 
-article{
-	margin-top: 5px;
-	padding-bottom: 50px;
-}
 
 /* ID */
 
-#input_search{
-	padding: 40px 20px 0px 30px;
+#div_input{
+	margin-left: 30px;
+	margin-top: 60px;
+}
+
+#coluna_grid{
+	margin-left: 50px;
+	max-height: 600px; 
+	overflow:auto;
+
 }
 
 #coluna_filter{

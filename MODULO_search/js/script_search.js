@@ -98,10 +98,8 @@ function analzye_Cookie(keyword){
 	$("#input_key").val(keyword);  
 	add_keyInput(keyword);
 	searchDataBase(1);
-	deleteCookie("keyword");
-	
-	}
-
+	deleteCookie(keyword);
+}
 };
 
 //
@@ -217,10 +215,12 @@ $(document).ready(function(){
 	});
 
 	var keyword = getCookie('keyword');
-	
 	analzye_Cookie(keyword);
+	deleteCookie('keyword');
+
 	
 })
+
 
 function autoDelete(local,id){
 	

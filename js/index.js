@@ -8,7 +8,7 @@ function search(value){
 
 	var dataAtual = new Date();
 	setCookie('keyword',value,dataAtual);
-	window.location.href = "search.php";
+	window.location.href = "MODULO_search/search.php";
 
 }
 
@@ -58,7 +58,7 @@ $('#btn_search').click(function(){
 
 $('#btn_fale_conosco').click(function(){	
 
-	window.location.href = "fale_conosco.php";
+	window.location.href = "MODULO_fale_conosco/fale_conosco.php";
 });
 
 $('#btn_contato').click(function(){	

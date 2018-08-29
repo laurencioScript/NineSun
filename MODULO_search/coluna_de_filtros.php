@@ -41,7 +41,7 @@
 				<label class="form-check-label" id="lbl_sao">São Vicente</label>	
 		</div></li>				
 		<li><div class="col-md-offset-8">
-				<button type="button"  id="btn_confirm_city" class="btn btn-primary btn-sm">OK</button>
+				<button type="button"  id="btn_confirm_city" class="btn btn-warning btn-sm">OK</button>
 		</div></li>
 	</ul>
 </div>
@@ -93,7 +93,7 @@
 		</li>
 		<li>
 			<div class="col-md-offset-8">
-				<button type="button" id="btn_confirm_class" class="btn btn-primary btn-sm">OK</button>
+				<button type="button" id="btn_confirm_class" class="btn btn-warning btn-sm">OK</button>
 			</div>
 		</li>
 	</ul>
@@ -141,7 +141,7 @@
 			<label class="form-check-label" for="exampleRadios1">Pet Permitido</label>	
 		</div></li>				
 		<li><div class="col-md-offset-8">
-			<button type="button" id="btn_confirm_acomidades" class="btn btn-primary btn-sm">OK</button>
+			<button type="button" id="btn_confirm_acomidades" class="btn btn-warning btn-sm">OK</button>
 		</div></li>
 	</ul>
 </div>	

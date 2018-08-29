@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contato</title>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" type="text/css" href="css/header_footer.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
-	<div class="row" id="cabeca">
-		<div class="col-md-2 col-xs-4 col-sm-2">
-			<a href="index.php">
-			<img src="img/Nine Sun logo.png" class="img-responsive" alt="img logo">
-			</a>
-		</div>
-	</div>
+
+	<?php include_once("php/header.php"); ?>
 
 	<div class="row" id="icon-contato">
 		<div class="col-md-offset-4 col-md-1 col-xs-offset-1 col-xs-3 col-sm-offset-1 col-sm-2">
@@ -34,19 +29,7 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div id="rodape"> 
-		<div class="col-md-4 col-xs-4 col-sm-4">
-			<button type="button" class="btn btn-link colo_btn" id="btn_fale_conosco">Fale Conosco</button>
-			<button type="button" class="btn btn-link" id="btn_duvidas">Duvidas</button>	
-		</div>	
-
-		<div class="col-md-offset-5 col-md-3 col-xs-offset-3 col-xs-3 col-sm-4">
-			<button type="button" class="btn btn-link" id="btn_contato">Contato</button>
-			<button type="button" class="btn btn-link" id="btn_sobre">Sobre</button>	
-		</div>	
-		</div>	
-	</div>
+	<?php include_once("php/footer.php"); ?>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="//code.jquery.com/jquery.js"></script>

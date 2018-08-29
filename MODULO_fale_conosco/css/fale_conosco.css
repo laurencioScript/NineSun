@@ -6,6 +6,7 @@ footer {
 h2
 {
 	color: #FDAD00;
+	margin-left: 20px;
 }
 .apresentacao
 {
@@ -28,4 +29,18 @@ h2
 {
 	margin: 10px 0px 0px 0px;
 	/* talvez apareça emoutro lugar*/
+}
+#texto
+{
+	text-align: center;
+}
+#apresentacao
+{
+	font-family: lucida console;
+	font-size: 20px;
+	color: #4d88ff;
+}
+#botao
+{
+	margin: 10px 0px 0px 0px;
 }

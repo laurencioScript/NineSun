@@ -4,7 +4,7 @@ $keyword = $_POST['key'];
 
 $keyword_especial = str_replace(" ","",$keyword);
 
-echo "<button class=\"btn btn-primary btn-xs btn_divKeys\"
+echo "<button class=\"btn btn-warning btn-xs btn_divKeys\"
 				type=\"button\"  
 			  name=\"$keyword_especial\" 
 			  onclick=\"autoDelete('keyword','#btn_$keyword_especial')\"  

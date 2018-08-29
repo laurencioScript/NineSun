@@ -18,9 +18,12 @@ $keyword_especial = str_replace(" ","",$data[0]);
           <button type=\"button\" onclick=\"search('$data[0]')\" id=\"$keyword_especial\" class=\"btn btn-link btn_sugestao\">$data[0]</button> \n
           <style>
             #keywords{
+              z-index: 2;
+              background-color:white;
               border: 1px solid #A9A9A9;} 
             .btn_sugestao{
               margin-left:15px;}
+
           </style>
         </div>";}	  
 ?> 

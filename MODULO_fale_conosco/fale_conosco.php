@@ -13,15 +13,8 @@
 
 </head>
 <body>
-	<header class="row" id="cabeca">
-		<div class="col-md-2 col-xs-4 col-sm-2">	
-			<h1>
-				<a href="index.php">
-					<img src="../img/Nine Sun logo.png" class="img-responsive" alt="Logo da NineSun">	
-				</a>
-			</h1>
-		</div>
-	</header>
+
+	<?php include_once("php/header.php"); ?>
  
 	<div class="row">
 		<div class="col-md-offset-3 col-md-6">
@@ -30,7 +23,7 @@
 				<h2>Fale Conosco</h2>
 			</div>
 
-			<div class="hidden-sm hidden-xs" style="text-align: center;">
+			<div class="hidden-sm hidden-xs" id="texto">
 				<p class="apresentacao">Envie seu feedback, sugestões e criticas.</p>
 				<p class="apresentacao"> Teremos prazer em ouvi-lo.</p>
 			</div>	
@@ -79,7 +72,7 @@
 
 	<?php include_once("../php/footer.php"); ?>
 	
-		<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 	
 </body>
 </html>

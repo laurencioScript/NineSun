@@ -14,47 +14,38 @@
 <!-- /input-group -->
 <body>	
 	
-	<header class="row"> 
-		<div class="col-md-2">
+	<header class="row "> 
+		<div id="header" class="col-md-2">
 			<h1><a href="../index.php">
 				<img src="img/Nine Sun logo.png" class="img-responsive" alt="Logo da NineSun">
 			</a></h1>
 		</div>
-		
-		<div class="col-md-7">			
-  			<div class="input-group" id="input_search">
- 				<input type="text" class="form-control" id="input_key" placeholder="" aria-describedby="sizing-addon1" > 
- 				<span class="input-group-btn">
-        			<button  class="btn btn-warning" type="button" id="btn_search">
-        				<span class="glyphicon glyphicon-search"></span>
-        			</button>
-      			</span>			
+		<div id="div_input" class="col-md-7">			
+  			<div  class="row"><!-- Campo de pesquisa -->
+  				<div class="input-group" id="input_search">
+ 					<input type="text" class="form-control" id="input_key" placeholder="" aria-describedby="sizing-addon1" > 
+ 					<span class="input-group-btn">
+        				<button  class="btn btn-warning" type="button" id="btn_search">
+        					<span class="glyphicon glyphicon-search"></span>
+        				</button>
+      				</span>	
+				</div>
 			</div>
-		</div>
+  			<div class="row"><!-- Resultados de pesquisa -->
+  				<div id="keywords">
+				</div>
+			</div>	
+		</div>		
 	</header>
-
-	<div class="col-md-offset-2 col-md-7">			
-  		<div id="keywords"></div>
-	</div>	
-
+	
 		
-	<article class="row">
+		
+	<article id="conteudo" class="row">
 		<div class="col-md-3" id="coluna_filter">
 			<?php include_once'/coluna_de_filtros.php'; ?>	
 		</div>
-		<div class="col-md-8 teste" id="coluna_grid">	
+		<div class="col-md-8" id="coluna_grid">	
 				
-				<div class="col-md-7 item_Grid " >
-					<div class="col-md-5 teste">
-						<img src="img/no_img.png" class="img-responsive">		
-					</div>
-					<div class="col-md-6 teste">
-						<h3><p class="label_NomeHotel">$data[0] </p></h3>
-						<p class="labels_Grid">Endereço: $data[1]</p>
-						<p class="labels_Grid">Telefone:$data[2]</p>
-						<p class="labels_Grid">Website:$data[3]</p>						
-					</div>	
-				</div>;
 		</div> 
 	</article>
 
@@ -64,7 +55,7 @@
 			<button type="button" class="btn btn-link" id="btn_duvidas">Duvidas</button>	
 		</div>	
 
-		<div id="bug" class="col-md-offset-5 col-md-3 col-xs-offset-3 col-xs-3 col-sm-4 ">
+		<div id="bug" class="col-md-offset-5 col-md-3 col-xs-offset-3 col-xs-3 col-sm-4">
 			<button type="button" class="btn btn-link" id="btn_contato">Contato</button>
 			<button type="button" class="btn btn-link" id="btn_sobre">Sobre</button>	
 		</div>	
