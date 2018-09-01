@@ -1,0 +1,140 @@
+header{
+	background-color:#0099cc;
+	z-index: 1;
+}
+.menu {
+    background: #FFA500	 repeat left top;
+    border-right:3px solid #4169E1;
+    left: -350px;
+    overflow:auto;
+    position:fixed;
+    height: 100%;
+    width: 300px;
+    z-index: 1;
+
+}
+
+.menu li button {
+    line-height: 45px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    border: 1px solid #FFFF00;
+	margin-left:7px;
+	width: 95%;
+	background-color: #4169E1;
+}
+
+.menu li .btn-link {
+    color: #FFFF00;
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+
+}       
+
+.btn-link:hover{
+	text-decoration:none;
+	border: 1px solid gold;
+}
+
+.menu li .btn-link:hover{
+    color: white;
+}
+
+.btn-link:focus{
+	text-decoration:none;
+	border: 2px solid white;
+	outline-color: transparent;
+}
+
+.menu li .btn-link:focus{
+    color: gold;
+}
+
+.icon-menu button:focus, #btn_fechar:focus{
+	color:black;
+}
+
+.btn-link:active{
+	text-decoration:none;
+	outline-color: transparent;
+}
+
+.menu li .btn-link:active{
+    color: white;
+	outline-color: transparent;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 2px solid;
+
+}
+
+.icon-close {
+    cursor: pointer;
+    padding-right: 30px;
+    text-align: right;
+    padding-top: 10px;
+    color: #1E90FF;
+}
+
+.icon-menu {
+	color:#1E90FF;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+    z-index: -1;
+    padding-top: 5px;
+}
+
+#li_cidades, #li_classificacao, #li_acomidades{
+	font-size: 15px;
+	color: gold;
+}
+
+/* Coisas Inuteis */
+
+button{
+	background-color: Transparent;
+	border: 1px solid Transparent;
+}
+
+.icon-menu i {
+    margin-right: 5px;
+}
+
+.icon-menu p {
+    border-bottom: 2px solid;
+    max-width: 79px;
+}
+
+#btn_filter{
+	display: inline;
+	background-color:#DCDCDC;
+}
+
+
+#btn_fechar:focus,#btn_menu:focus,#btn_fechar:active,#btn_menu:active{
+	outline-color: transparent;
+}
+
+footer{
+	z-index: 1;
+}
+
+
+a{
+	text-decoration:none;
+}
+
+#btn_search, #input{
+box-shadow: 0px 0px #DCDCDC;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

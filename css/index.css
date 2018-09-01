@@ -1,0 +1,57 @@
+.teste{
+	border: 1px solid red;
+}
+/* Index */
+
+#campo_busca{
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+#campo_resultado{
+	margin-top: 35px;
+	z-index: 2;
+}
+
+#btn_search, #input{
+border-radius: 0px;
+box-shadow: 0px 10px #DCDCDC;
+border:1px solid gold;
+}
+
+#btn_search{
+	 box-shadow: 5px 10px #DCDCDC;
+}
+
+footer{
+	bottom: 0;
+	position: absolute;
+	width:100%;
+	background-color: #DCDCDC;
+	border-top: 1px #A9A9A9 solid;
+}
+
+#footer_right{
+	right: 0 ;
+	position: absolute;
+	text-align: right;
+}
+
+/* Bootstrap */
+
+.btn-link{
+	color: #696969;
+	font-size: 12px;
+}
+
+/* QueryUI */
+
+.ui-corner-all{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	
+}
+
+.ui-menu{
+	border:1px solid gold;
+}

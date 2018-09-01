@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Nine Sun</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/index_style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/header_footer.css">
-    <link rel="stylesheet" type="text/css" href="css/geral.css">
-</head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      
+      <div class="row" id="logo">   
+        <div class="col-md-offset-4 col-md-4" id="div_logo">
+          <img src="img/logo_04.png" class="img-responsive" alt="img logo"> 
+        </div>
+      </div><!-- Logo -->
+    
+      <div class="row" id="campo_busca">
+        <div class="col-md-offset-4 col-md-4 col-xs-offset-1 col-xs-8 ">
+          <form autocomplete="off" action="/search.php" method="GET" class="form-horizontal">
+            <div class="form-group">
+              <input type="search" class="form-control" id="input" placeholder="Encontre seu hotel ideal">
+            </div>    
+          </form>
+        </div>
+          <button class="btn btn-warning" type="submit" id="btn_search">
+                <span class="glyphicon glyphicon-search"></span>
+          </button>          
+      </div><!-- Campo de Busca -->
 
-<body>
+      <footer class="row">         
+            <div class="col-md-2 col-xs-6">
+              <button type="button" class="btn btn-link colo_btn" id="btn_fale_conosco">Fale Conosco</button>
+              <button type="button" class="btn btn-link" id="btn_duvidas">Duvidas</button>  
+            </div>  
+            <div class="col-md-2 col-xs-5" id="footer_right">
+              <button type="button" class="btn btn-link" id="btn_contato">Contato</button>
+              <button type="button" class="btn btn-link" id="btn_sobre">Sobre</button>  
+            </div>
+      </footer>
 
-	<div class="container-fluid">
-		
-		<!-- LOLO NINE SUN -->
-		<div class="row" id="row_header">
-			<div class="col-md-offset-4 col-md-4" id="div_logo">
-				<img src="img/logo_04.png" class="img-responsive" alt="img logo">	
-			</div>
-		</div>
-		
-		<!-- Row Conteudo -->
-		<div class="row">
-			<div class="row">	
-				<div class="col-md-offset-4 col-md-4">	
-					<div class="input-group">
- 						<input type="text" class="form-control" id="input_key" placeholder="Encontre o melhor hotel para você" aria-describedby="sizing-addon1" > 			
- 						<span class="input-group-btn">
-        				<button class="btn btn-warning" type="button" id="btn_search">
-        				<span class="glyphicon glyphicon-search"></span>
-        				</button>
-        				</span>			
-					</div>
-				</div>
-			</div><!-- Row Input -->
-			
-			<div class="row" >	
-				<div class="col-md-offset-4 col-md-4">			
-  					<div id="keywords"></div>
-				</div>
-			</div><!-- Row Barra de Sugestão -->
-		</div> 
-	</div><!-- Container -->
-			
-	<?php include_once("php/footer.php"); ?>
-	      
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/cookie.js"></script>
-	<script src="js/barra_de_pesquisa.js"></script>
-	<script src="js/index.js"></script>
-</body>
+    </div><!-- Container -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/buscador.js"></script>
+  </body>
 </html>
