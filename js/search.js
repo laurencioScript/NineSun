@@ -1,21 +1,6 @@
 let height = document.getElementById("header").clientHeight;
 document.getElementById("div_input").style.marginTop = (height/2)+'px';
 
-function parametro_url(){
-    let url = location.search.split("=");
-    console.log(url)
-    let value = url[1];
-    while(value.indexOf("%20")>-1)
-        value = value.replace("%20"," ");    
-    $('#input').val(value);
-    add_btn_filter("li_cidades",value);
-}
-
-function moverMenu(distMenu, distBody) {
-    $('.menu').animate({left: distMenu + "px"}, 200);
-    $('body').animate({left: distBody + "px"}, 200);
-}
-
 $(document).ready(function(){
     $('.icon-menu').click(() => { moverMenu(0, 350) });
     $('#btn_fechar').click(() => { moverMenu(-350, 0) });
@@ -93,4 +78,18 @@ function check_input(object,name,value){
          if(input == name)
              object[i].children[0].children[0].checked = value;      
      }
+}
+
+function parametro_url(){
+    let url = location.search.split("=");
+    let value = url[1];
+    while(value.indexOf("%20")>-1)
+        value = value.replace("%20"," ");    
+    $('#input').val(value);
+    add_btn_filter("li_cidades",value);
+}
+
+function moverMenu(distMenu, distBody) {
+    $('.menu').animate({left: distMenu + "px"}, 200);
+    $('body').animate({left: distBody + "px"}, 200);
 }

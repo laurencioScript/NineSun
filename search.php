@@ -1,4 +1,3 @@
-<?php $uri = $_GET['tmpString']; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,42 +36,37 @@
 			</div>
 		</header>
 		
-		<article id="conteudo" class="row">
-			
+		<article class="row">
             <div class="row" id="coluna_filter">			
-				<div class="menu">
-        			<div class="icon-close">           			
-						<div class="row"><div class="col-md-offset-10">
-							<button id="btn_fechar"><span class="glyphicon glyphicon-arrow-left btn-lg"></span></button>	
+				<div class="menu"> <!-- Bloco Menu -->
+        			<div class="row"> <!-- BTN Fecha Menu -->
+						<div class="icon-close"><div class="col-md-offset-10 ">
+							<button id="btn_fechar"><span class="glyphicon glyphicon-cog"></span></button>	
 						</div></div>
         			</div>
-        			<!-- Menu -->
-        			<ul id="menu">
+        			<ul id="menu"> <!-- Menu de opções -->
             			<li>
                 			 <button type="button" class="btn btn-link colo_btn" id="btn_cidade">Cidades</button>
             			</li>
-            			<li id="li_cidades"></li>
+            			<li id="li_cidades"></li><!-- sub-menu -->
             			<li>
                 			 <button type="button" class="btn btn-link colo_btn" id="btn_classificacao">Classificação</button>
             			</li>
-            			<li id="li_classificacao"></li>
+            			<li id="li_classificacao"></li><!-- sub-menu -->
             			<li>
                 			 <button type="button" class="btn btn-link colo_btn" id="btn_acomodidade">Acomidades</button>
            				</li>
-           				<li id="li_acomidades"></li>
+           				<li id="li_acomidades"></li><!-- sub-menu -->
         			</ul>
-    			</div>
-    			<div class="col-md-1">
+    			</div> <!-- Bloco Menu -->
+    			<div class="col-md-1"> <!-- BTN Abre Menu -->
                     <div id="btn_filter" class="icon-menu">
                         <button id="btn_menu"><span class="glyphicon glyphicon-cog"></span></button>
                     </div>    
-                </div>
-    			<div id="barra_btn_filter" class="col-md-offset-1 col-md-8"">         
-                  
-                </div>  			
+                </div><!-- BTN Abre Menu -->
+    			<div id="barra_btn_filter" class="col-md-offset-2 col-md-6"">       
+                </div><!-- Barra de BTNS -->
 			</div>
-
-            
 		
 			<div class="col-md-8" id="coluna_grid">			
 			
