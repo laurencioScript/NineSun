@@ -6,7 +6,6 @@ document.getElementById("logo").style.marginTop = (height/9)+'px';
 //console.log((height/9)+'px');
 
 $('#btn_fale_conosco').click(function(){	
-
 	window.location.href = "MODULO_fale_conosco/fale_conosco.php";
 });
 

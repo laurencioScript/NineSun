@@ -1,3 +1,4 @@
+<?php $uri = $_GET['tmpString']; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +39,7 @@
 		
 		<article id="conteudo" class="row">
 			
-			<div class="" id="coluna_filter">			
+            <div class="row" id="coluna_filter">			
 				<div class="menu">
         			<div class="icon-close">           			
 						<div class="row"><div class="col-md-offset-10">
@@ -59,17 +60,19 @@
                 			 <button type="button" class="btn btn-link colo_btn" id="btn_acomodidade">Acomidades</button>
            				</li>
            				<li id="li_acomidades"></li>
-            			<li>
-                			 <button type="button" class="btn btn-link colo_btn" id="btn_fale_conosco">Keyword</button>
-            			</li>
         			</ul>
     			</div>
-    			
-    			<div id="btn_filter" class="icon-menu">
-            		<button id="btn_menu"><span class="glyphicon glyphicon-cog"></span></button>
-        		</div>
-    			
+    			<div class="col-md-1">
+                    <div id="btn_filter" class="icon-menu">
+                        <button id="btn_menu"><span class="glyphicon glyphicon-cog"></span></button>
+                    </div>    
+                </div>
+    			<div id="barra_btn_filter" class="col-md-offset-1 col-md-8"">         
+                  
+                </div>  			
 			</div>
+
+            
 		
 			<div class="col-md-8" id="coluna_grid">			
 			
