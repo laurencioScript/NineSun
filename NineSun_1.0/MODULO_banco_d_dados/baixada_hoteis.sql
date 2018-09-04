@@ -32,9 +32,9 @@ primary key(id));
 
 create table servicos(
 id int auto_increment not null,
-wifi_quartos int not null,
-wifi_lobby int not null,
-psicina int not null,
+wifi_nos_quartos int not null,
+wifi_no_lobby int not null,
+piscina int not null,
 estacionamento int not null,
 academia int not null,
 spa int not null,
@@ -42,15 +42,16 @@ bar_no_hotel int not null,
 restaurante int not null,
 pet_permitidos int not null,
 primary key(id),
-foreign key(wifi_quartos) references respostas(id),
-foreign key(wifi_lobby) references respostas(id),
-foreign key(psicina) references respostas(id),
+foreign key(wifi_nos_quartos) references respostas(id),
+foreign key(wifi_no_lobby) references respostas(id),
+foreign key(piscina) references respostas(id),
 foreign key(estacionamento) references respostas(id),
 foreign key(academia) references respostas(id),
 foreign key(spa) references respostas(id),
 foreign key(bar_no_hotel) references respostas(id),
 foreign key(restaurante) references respostas(id),
 foreign key(pet_permitidos) references respostas(id));
+
 
 create table respostas(
 id int auto_increment not null,

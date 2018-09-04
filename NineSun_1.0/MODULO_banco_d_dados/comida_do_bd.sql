@@ -1,5 +1,5 @@
 use baixada_hoteis;
-
+/*
 select * from hoteis;
 
 select id,nome from hoteis where nome like 'h%';
@@ -8,20 +8,25 @@ select hoteis.id,nome,tipo,endereco,telefone,website,email,id_servico,classifica
 join tipos ON id_tipo = tipos.id 
 join cidades ON id_cidade =cidades.id ;
 
-select hoteis.id,nome,endereco,telefone,website,classificao,cidade from hoteis  
-join cidades ON id_cidade = cidades.id where cidade = 'Bertioga' ;
+select nome,endereco,telefone,website,classificao,cidade from hoteis  
+join cidades ON id_cidade = cidades.id 
+join servicos ON id_servico = servicos.id ;
+
+
+select nome,endereco,telefone,website,classificao,cidade from hoteis  
+join cidades ON id_cidade = cidades.id 
+where cidade IN('São Vicente');
 
 SELECT nome FROM hoteis WHERE nome LIKE 's%'  
 UNION
 SELECT cidade FROM hoteis join cidades ON id_cidade =cidades.id  WHERE cidade Like 's%' limit 5 ;
+*/
 
 
 insert into tipos(tipo) values ('hotel');
 insert into tipos(tipo) values ('pousada');
 
 select * from tipos;
-
-#
 
 insert into cidades(cidade) values ('Bertioga'); 
 insert into cidades(cidade) values ('Cubatão'); 

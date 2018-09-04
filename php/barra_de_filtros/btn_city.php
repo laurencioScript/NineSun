@@ -1,15 +1,26 @@
 <?php 
 $keyword = $_POST['key'];
-$array = is_array($keyword);
-$txt ="";	
-$max = sizeof($keyword)-1;
+$name = $keyword;
+$keyword_especial = $keyword;
+
+while (strstr($keyword, '_') != false) {
+	 $keyword_especial = str_replace("_"," ",$keyword);
+}
+
+while (strstr($name, ' ') != false) {
+	 $name = str_replace(" ","_",$name);
+	 $name = strtolower($name);
+}
+
+
+
 
 echo "<button 
 		class=\"btn btn-warning btn-xs btn_divKeys\" 
 		type=\"button\" 
-		name=\"$keyword\" 
+		name=\"$name\" 
 		id=\"btn_$keyword\">
-		$keyword
+		$keyword_especial
 		<span class=\"glyphicon glyphicon-remove\">
 		</span>
 	</button>";

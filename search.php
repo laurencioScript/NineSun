@@ -66,11 +66,28 @@
                 </div><!-- BTN Abre Menu -->
     			<div id="barra_btn_filter" class="col-md-offset-2 col-md-6"">       
                 </div><!-- Barra de BTNS -->
-			</div>
-		
-			<div class="col-md-8" id="coluna_grid">			
+			</div><!-- COLUNA DE FILTROS --> 
+            
+            <div class="" id="coluna_grid" >
+                    <!--  
+                    
+                <div class="col-md-offset-2 col-md-8" id="grid">            
+                    <div class="col-md-5" id="img">
+                    <img src="img/no_img.png" >
+                </div>
+                <div class="col-md-6" id="informacoes" >
+                    <div class="row" id="title" ><h3><i>$data[0]</i></h3></div>
+                    <div class="row uma_info"><b>Endereço:</b> $data[1]</div>
+                    <div class="row uma_info"> <b>Telefone:</b> $data[2] </div>
+                    <div class="row uma_info"><b>Site: </b><a>$data[3]</a></div>
+                    <div class="row uma_info" id="last_row"><b>Classficação: $estrelas</b> 5 estrelas</div>
+                </div>
+            </div>
+            --> 
+                </div>   
+            			
 			
-			</div>
+			
 
 		</article>
 
