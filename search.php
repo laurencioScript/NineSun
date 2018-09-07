@@ -36,7 +36,7 @@
 			</div>
 		</header>
 		
-		<article class="row">
+		<article class="">
             <div class="row" id="coluna_filter">			
 				<div class="menu"> <!-- Bloco Menu -->
         			<div class="row"> <!-- BTN Fecha Menu -->

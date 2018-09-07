@@ -18,6 +18,9 @@ if(count($cidade) > 1){
 };
 
 if(count($classificacao) > 1){
+	if(count($cidade) > 1){
+		$query.= " AND ";
+	}
 	$query .= " classificao IN (";
 	for ($i = 1; $i < count($classificacao); $i++) { 
 		$query .= $i > 1 ? ","  : "";
@@ -37,10 +40,8 @@ if(count($acomodidade) > 1){
 	};
 };
 
-echo $query;
+if(count($cidade) > 1 || count($acomodidade) > 1 || count($classificacao) > 1){
 $datareader = mysqli_query($connection,$query);
-
-
 
 while($data = mysqli_fetch_row($datareader)){	
     	
@@ -52,16 +53,19 @@ while($data = mysqli_fetch_row($datareader)){
 					<img src=\"img/no_img.png\" >
 				</div>
 				<div class=\"col-md-6 teste\" id=\"informacoes\" >
-					<div class=\"row\" id=\"title\" ><h4><i><u>$data[0]</u></i></h4></div>
+					<div class=\"row\" id=\"title\" ><h4><i>$data[0]</i></h4></div>
 					<div class=\"row uma_info\"><b>Endereço:</b> $data[1]</div>
 					<div class=\"row uma_info\"> <b>Telefone:</b> $data[2] </div>
-					<div class=\"row uma_info\"><b>Site: </b><a>$data[3]</a></div>
+					<div class=\"row uma_info\"><b>Site: </b><a href=\"$data[3]\">$data[0] </a></div>
 					<div class=\"row uma_info\" id=\"last_row\"><b>Classificação: $estrelas</b></div>
 				</div>
 			</div>
 		</div>";
 		echo $txt;
 }
+
+}
+
 
 
 function getStar($value){

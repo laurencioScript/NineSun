@@ -27,8 +27,8 @@ function add_lista_checkBox(arquivo,local){
                 add_btn_filter(path,$(this).val());
             }else{
                 for (var i = 0; i < btns.length; i++){
-                    if(btns[i].name == this.value)
-                        document.querySelector("#"+btns[i].id).remove();
+                    if(btns[i].name == this.id)
+                        document.querySelector("button[name='"+btns[i].name+"']").remove();
                         setTimeout(searchDataBase(),200);  
                 } 
             }                             
@@ -83,10 +83,12 @@ function check_input(object,name,value){
 function parametro_url(){
     let url = location.search.split("=");
     let value = url[1];
-    while(value.indexOf("%20")>-1)
-        value = value.replace("%20"," ");    
-    $('#input').val(value);
-    add_btn_filter("li_cidades",value);
+    if(value != undefined){
+        while(value.indexOf("%20")>-1)
+            value = value.replace("%20"," ");    
+        $('#input').val(value);
+        add_btn_filter("li_cidades",value);
+    }
 }
 
 function moverMenu(distMenu, distBody) {
@@ -130,7 +132,7 @@ function searchDataBase(){
             keyword.push(btns[i].name);
         }
     }
-    console.log(city.length+','+clas.length+','+acom.length+','+keyword.length);
+   // console.log(city.length+','+clas.length+','+acom.length+','+keyword.length);
     $.ajax({
         url: 'php/Grid/grid.php',        
         type: 'POST',

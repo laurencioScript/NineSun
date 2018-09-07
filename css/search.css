@@ -163,9 +163,8 @@ box-shadow: 0px 0px #DCDCDC;
 /* ========================== Barra de BTNS filtros ========================== */
 #barra_btn_filter{
     background-color:#DCDCDC;
-    margin-top: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     border-radius: 30px;
     text-align: center;
     border: 1px solid #b3b3b3;
