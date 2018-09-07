@@ -69,11 +69,7 @@
                 </div><!-- BTN Abre Menu -->
     			<div id="barra_btn_filter" class="col-md-offset-2 col-md-6"">       
                 </div><!-- Barra de BTNS -->
-			</div>
-		
-			<div class="col-md-8" id="coluna_grid">			
-			
-			</div>
+ </div>
 
 		</article>
 
