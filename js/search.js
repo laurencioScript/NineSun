@@ -135,7 +135,7 @@ function searchDataBase(){
    // console.log(city.length+','+clas.length+','+acom.length+','+keyword.length);
     $.ajax({
         url: 'php/Grid/grid.php',        
-        type: 'POST',
+        type: 'GET',
         dataType: 'html',
         data:{cidade:city, classificacao:clas, acomodidade:acom, keyword : keyword},
         success: function(msg){   

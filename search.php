@@ -68,23 +68,34 @@
                 </div><!-- Barra de BTNS -->
 			</div><!-- COLUNA DE FILTROS --> 
             
-            <div class="" id="coluna_grid" >
-                    <!--  
+            <div class="row" id="coluna_grid" >
+                     
                     
-                <div class="col-md-offset-2 col-md-8" id="grid">            
-                    <div class="col-md-5" id="img">
-                    <img src="img/no_img.png" >
+                <div id="row_grid">
+                    <div class="col-md-12" id="grid">           
+                        <div class="col-md-5" id="img">
+                            <img src="img/hhhh.jpg" >
+                        </div>
+                        <div class="col-md-6" id="informacoes" >
+                            <div class="row" id="title" ><h4><i>$data[0]</i></h4></div>
+                            <div class="row uma_info"><b>Endereço:</b> $data[1]</div>
+                            <div class="row uma_info"> <b>Telefone:</b> $data[2] </div>
+                            <div class="row uma_info"><b>Site:</b>
+                            <a target="_blanck" href="http://$link" >$data[0] </a>
+                            </div>
+                            <div class="row uma_info" ><b>Classificação: $estrelas</b></div>
+                            <div class="row uma_info" id="last_row">
+                                <button type="button" class="btn btn-link colo_btn" id="$data[0]">Mais informações</button>
+                            </div>
+
+                        </div>
+                       
+                    </div>
                 </div>
-                <div class="col-md-6" id="informacoes" >
-                    <div class="row" id="title" ><h3><i>$data[0]</i></h3></div>
-                    <div class="row uma_info"><b>Endereço:</b> $data[1]</div>
-                    <div class="row uma_info"> <b>Telefone:</b> $data[2] </div>
-                    <div class="row uma_info"><b>Site: </b><a>$data[3]</a></div>
-                    <div class="row uma_info" id="last_row"><b>Classficação: $estrelas</b> 5 estrelas</div>
-                </div>
-            </div>
-            --> 
-                </div>   
+
+
+
+            </div>   
             			
 			
 			
