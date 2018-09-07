@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/search.css">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
 <body>	
@@ -19,11 +22,11 @@
 		<header class="row"> 				
 			<div id="header" class="col-md-2 col-xs-3">
 				<h1><a href="index.php">
-					<img src="img/Nine Sun logo.png" class="img-responsive" alt="Logo da NineSun">
+					<img src="img/NovaLogo.png" class="img-responsive" alt="Logo da NineSun">
 				</a></h1>
 			</div><!-- Logo -->
 			<div id="div_input"	>
-  				<div  class="col-md-6 col-xs-7">
+  				<div  class="col-md-6 col-xs-7" id="alinha-barra">
           			<form action="/search.php" autocomplete="off" method="GET" class="form-horizontal">
             			<div class="form-group">
             	  			<input type="search" class="form-control" id="input" placeholder="Encontre seu hotel ideal">
@@ -36,7 +39,7 @@
 			</div>
 		</header>
 		
-		<article class="">
+		<article class="row">
             <div class="row" id="coluna_filter">			
 				<div class="menu"> <!-- Bloco Menu -->
         			<div class="row"> <!-- BTN Fecha Menu -->
@@ -46,15 +49,15 @@
         			</div>
         			<ul id="menu"> <!-- Menu de opções -->
             			<li>
-                			 <button type="button" class="btn btn-link colo_btn" id="btn_cidade">Cidades</button>
+                			 <button type="button" class="btn btn-link colo_btn" id="btn_cidade"><i class="fas fa-globe-americas"></i> Cidades</button>
             			</li>
             			<li id="li_cidades"></li><!-- sub-menu -->
             			<li>
-                			 <button type="button" class="btn btn-link colo_btn" id="btn_classificacao">Classificação</button>
+                			 <button type="button" class="btn btn-link colo_btn" id="btn_classificacao"><i class="fas fa-star-half-alt"></i> Classificação</button>
             			</li>
             			<li id="li_classificacao"></li><!-- sub-menu -->
             			<li>
-                			 <button type="button" class="btn btn-link colo_btn" id="btn_acomodidade">Acomidades</button>
+                			 <button type="button" class="btn btn-link colo_btn" id="btn_acomodidade"><i class="fas fa-bed"></i> Acomidades</button>
            				</li>
            				<li id="li_acomidades"></li><!-- sub-menu -->
         			</ul>
@@ -66,28 +69,11 @@
                 </div><!-- BTN Abre Menu -->
     			<div id="barra_btn_filter" class="col-md-offset-2 col-md-6"">       
                 </div><!-- Barra de BTNS -->
-			</div><!-- COLUNA DE FILTROS --> 
-            
-            <div class="" id="coluna_grid" >
-                    <!--  
-                    
-                <div class="col-md-offset-2 col-md-8" id="grid">            
-                    <div class="col-md-5" id="img">
-                    <img src="img/no_img.png" >
-                </div>
-                <div class="col-md-6" id="informacoes" >
-                    <div class="row" id="title" ><h3><i>$data[0]</i></h3></div>
-                    <div class="row uma_info"><b>Endereço:</b> $data[1]</div>
-                    <div class="row uma_info"> <b>Telefone:</b> $data[2] </div>
-                    <div class="row uma_info"><b>Site: </b><a>$data[3]</a></div>
-                    <div class="row uma_info" id="last_row"><b>Classficação: $estrelas</b> 5 estrelas</div>
-                </div>
-            </div>
-            --> 
-                </div>   
-            			
+			</div>
+		
+			<div class="col-md-8" id="coluna_grid">			
 			
-			
+			</div>
 
 		</article>
 
