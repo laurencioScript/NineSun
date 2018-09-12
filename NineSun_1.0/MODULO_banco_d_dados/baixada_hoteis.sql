@@ -12,10 +12,11 @@ email varchar(100) not null default "",
 id_servico int not null,
 classificao int  default 0,
 id_cidade int not null,
-id_img int ,
+id_img int not null,
 primary key(id),
 foreign key(id_tipo) references tipos(id),
 foreign key(id_cidade) references cidades(id),
+foreign key(id_img) references imagens(id),
 foreign key(id_servico) references servicos(id)
 );
 
@@ -57,3 +58,13 @@ create table respostas(
 id int auto_increment not null,
 resposta varchar(50),
 primary key(id));
+
+create table imagens(
+id int auto_increment not null,
+img_A varchar(50),
+img_B varchar(50),
+img_C varchar(50),
+img_D varchar(50),
+img_E varchar(50),
+primary key(id)
+)

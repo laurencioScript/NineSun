@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     $('.icon-menu').click(() => { moverMenu(0, 350) });
     $('#btn_fechar').click(() => { moverMenu(-350, 0) });
@@ -6,9 +5,11 @@ $(document).ready(function(){
     $("#btn_classificacao").click(function(){add_lista_checkBox("checks_boxs_classificacao.php","#li_classificacao");});
     $("#btn_acomodidade").click(function(){add_lista_checkBox("checks_boxs_acomodidades.php","#li_acomidades");});
     parametro_url();
+    
 });
 
 function add_lista_checkBox(arquivo,local){
+    //SE O LOCAL JA TIVER VALOR ELE LIMPAR
     if($(local).html().length != 0) return $(local).html("");
     let btns = document.querySelector("#barra_btn_filter").children;
                 
@@ -139,6 +140,7 @@ function searchDataBase(){
         dataType: 'html',
         data:{cidade:city, classificacao:clas, acomodidade:acom, keyword : keyword},
         success: function(msg){   
-            $('#coluna_grid').html(function(){return msg});}    
+            $('#coluna_grid').html(function(){return msg});
+            colocarEventoGrid();}    
     });
 }

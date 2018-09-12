@@ -42,17 +42,17 @@ if(count($acomodidade) > 1){
 
 if(count($cidade) > 1 || count($acomodidade) > 1 || count($classificacao) > 1){
 $datareader = mysqli_query($connection,$query);
-
+$cont = 0;
 while($data = mysqli_fetch_row($datareader)){	
     	$link = $data[3];
     	$link = urlencode($link);
     	$link = str_replace("+","",$link);
-
+    	$cont++;
 
     	$estrelas = getStar($data[4]);
 		$txt =  
 		"<div id=\"row_grid\">
-                    <div class=\"col-md-12\" id=\"grid\">           
+                    <div class=\"col-md-12\" id=\"$cont.Grid\">           
                         <div class=\"col-md-5\" id=\"img\">
                             <img src=\"img/hhhh.jpg\" >
                         </div>
@@ -65,7 +65,7 @@ while($data = mysqli_fetch_row($datareader)){
                             </div>
                             <div class=\"row uma_info\" ><b>Classificação: $estrelas</b></div>
                             <div class=\"row uma_info\" id=\"last_row\">
-                                <button type=\"button\" class=\"btn btn-link colo_btn\" id=\"$data[0]\">Mais informações</button>
+                                <button type=\"button\" class=\"btn btn-link colo_btn\" id=\"$data[0]\" onclick=\"chamarSubMenu($data[0])\">Mais informações</button>
                             </div>
                         </div>
                     </div>

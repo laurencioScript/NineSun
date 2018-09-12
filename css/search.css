@@ -3,8 +3,9 @@ header{
 	background-color: whitesmoke;
 	z-index: 1;
 }
+
 #div_input{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 /* MENU */
@@ -12,9 +13,9 @@ header{
     background: #318ba2	 repeat left top;
     /*border-right:3px solid #4169E1;*/
     left: -350px;
-    overflow:auto;
-    position:fixed;
-    height: 100%;
+    overflow:visible;
+    position:absolute;
+    height: 80%;
     width: 300px;
     z-index: 1;
 }
@@ -158,7 +159,13 @@ box-shadow: 0px 0px #DCDCDC;
 }
 
 #coluna_filter{
+    margin-right: 0px;
+    margin-left: 0px;
 
+}
+
+#coluna_grid{
+    margin-bottom: 300px;
 }
 
 /* ========================== Barra de BTNS filtros ========================== */
@@ -184,70 +191,77 @@ box-shadow: 0px 0px #DCDCDC;
 /* ============================= GRID ================================== */
 
 #grid{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border:1px solid #b3b3b3; 
+    background-color:white ;
+    border-radius: 1px;
+
+}
+
+#img{
+    padding-left:0px;
+    padding-right:0px;
+   
+}
+
+#img_img{
+    max-height: 206px;
+    width: 310px;
+}
+
+#informacoes label{
+    display: block;
+}
+
+#informacoes button{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#btn_plus_info:focus, #btn_plus_info:active{
+    outline:0px solid transparent;
+    
+}
+
+#btn_plus_info:active{
+    color: gold;
+   
+}
+
+#coluna_grid{
+    position: relative;
+}
+
+
+#grid #img img{
+    border:1px solid #b3b3b3; 
+}
+
+#sub_grid{
     border:1px solid; 
     height: 250px; 
-    margin-top: 10px;
-    border:1px solid #b3b3b3; background-color:#DCDCDC ;
+    border:1px solid #b3b3b3; 
+    background-color:white ;
     border-radius: 1px;
-    }
-
-#row_grid{
-    margin-left: auto;
-    margin-right: auto;
-    width: 616px;    
-}    
-
-#img{ 
-    margin-top:15px;
+    margin-bottom: 15px;
 }
 
-#row_grid .col-md-5{
-    padding-left:0px;
-}
-#row_grid .col-md-12{
-    padding-right:0px;
-}
-
-#informacoes{
-    margin-top:15px; 
-    margin-left: 15px; 
-    background-color:#DCDCDC;
-    
-    border-left:2px solid #b3b3b3; 
-    height: 220px; }
-
-#title{
-    text-align: center;
-}
-#last_row{
-    padding-bottom:15px;
-}
-.uma_info{
-    padding-left: 15px; 
-    padding-top: 10px; 
-    padding-bottom: 5px;
+#btn-fechar{
+    right: 0;
+    position: absolute;
+    padding-top: 10px;
 }
 
-#coluna_grid img{
-    height: 220px;
-    width: 245px;
-    border: 1px solid #b3b3b3;
-    border-radius: 0px;
+#btn-fechar:focus , #btn-fechar:active{
+    outline:0px solid transparent;
+
 }
-#coluna_grid {
-    overflow:auto;
-    height: 450px;
-    margin-top: 15px;
-    border:0px solid black;
-    border-right: 0px;
-    border-left-style: 0px;
-    width: 100%;
+#btn-fechar:active{
+    color: gold;
+
 }
-#row_grid .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
-border:0px solid black;
-outline: 0px;
-}
-#row_grid  .btn-link:active {
-border:1px solid black;
-outline: 0px;
-}
+
+
+
