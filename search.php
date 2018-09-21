@@ -74,6 +74,7 @@
                 </div><!-- BTN Abre Menu -->
     			<div id="barra_btn_filter" class="col-md-offset-2 col-md-6"">       
                 </div><!-- Barra de BTNS -->
+<<<<<<< HEAD
             </div>
             
             <div class="" id="coluna_grid" >
@@ -95,6 +96,9 @@
                 <div></div><!-- SUB MENU --> 
              </div>
             </div><!-- COLUNA GRID -->
+=======
+ </div>
+>>>>>>> fad09dc694cc2c5ba22d76b957c6c46d5fafad08
 
 		</article>
 

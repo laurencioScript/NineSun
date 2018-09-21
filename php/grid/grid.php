@@ -47,12 +47,20 @@ while($data = mysqli_fetch_row($datareader)){
     	$link = $data[3];
     	$link = urlencode($link);
     	$link = str_replace("+","",$link);
+<<<<<<< HEAD
     	$cont++;
+=======
+
+>>>>>>> fad09dc694cc2c5ba22d76b957c6c46d5fafad08
 
     	$estrelas = getStar($data[4]);
 		$txt =  
 		"<div id=\"row_grid\">
+<<<<<<< HEAD
                     <div class=\"col-md-12\" id=\"$cont.Grid\">           
+=======
+                    <div class=\"col-md-12\" id=\"grid\">           
+>>>>>>> fad09dc694cc2c5ba22d76b957c6c46d5fafad08
                         <div class=\"col-md-5\" id=\"img\">
                             <img src=\"img/hhhh.jpg\" >
                         </div>
@@ -65,7 +73,11 @@ while($data = mysqli_fetch_row($datareader)){
                             </div>
                             <div class=\"row uma_info\" ><b>Classificação: $estrelas</b></div>
                             <div class=\"row uma_info\" id=\"last_row\">
+<<<<<<< HEAD
                                 <button type=\"button\" class=\"btn btn-link colo_btn\" id=\"$data[0]\" onclick=\"chamarSubMenu($data[0])\">Mais informações</button>
+=======
+                                <button type=\"button\" class=\"btn btn-link colo_btn\" id=\"$data[0]\">Mais informações</button>
+>>>>>>> fad09dc694cc2c5ba22d76b957c6c46d5fafad08
                             </div>
                         </div>
                     </div>
