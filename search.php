@@ -4,13 +4,17 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Baixada Hoteis</title>
+    <title>NineSun</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.css" >
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/search.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Icones -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -26,7 +30,7 @@
 				</a></h1>
 			</div><!-- Logo -->
 			<div id="div_input"	>
-  				<div  class="col-md-6 col-xs-7" id="alinha-barra">
+  				<div  class="col-md-offset-1 col-md-6 col-xs-7" id="alinha-barra">
           			<form action="/search.php" autocomplete="off" method="GET" class="form-horizontal">
             			<div class="form-group">
             	  			<input type="search" class="form-control" id="input" placeholder="Encontre seu hotel ideal">
@@ -39,7 +43,8 @@
 			</div>
 		</header>
 		
-		<article class="row">
+		<article>
+            
             <div class="row" id="coluna_filter">			
 				<div class="menu"> <!-- Bloco Menu -->
         			<div class="row"> <!-- BTN Fecha Menu -->
@@ -69,15 +74,32 @@
                 </div><!-- BTN Abre Menu -->
     			<div id="barra_btn_filter" class="col-md-offset-2 col-md-6"">       
                 </div><!-- Barra de BTNS -->
-			</div>
-		
-			<div class="col-md-8" id="coluna_grid">			
-			
-			</div>
+            </div>
+            
+            <div class="" id="coluna_grid" >
+             <div class="row">   
+                <div class="col-md-offset-3  col-md-6" id="grid">
+                        <div class="col-md-5 col-xs-6 " id="img">
+                                <img src="img/no_img.png" id="img_img" class="img-responsive" >
+                        </div>
+                        <div class=" col-md-7 col-xs-6 " id="informacoes" >
+                            <label><h4><i>$data[0]</i></h4></label>
+                            <label><b>Endereço: </b> $data[1]</label>
+                            <label><b>Telefone: </b> $data[2]</label>
+                            <label><b>Site: </b><a target="_blanck" href="http://$link">$data[0] </a></label>
+                            <label><b>E-mail: </b>$estrelas</label>
+                            <label><b>Classificação: $estrelas</b></label>
+                            <button type="button" class="btn btn-link colo_btn btn_plus_info" id="btn_plus_info">Mais informações</button>
+                        </div>
+                </div> <!-- GRID -->
+                <div></div><!-- SUB MENU --> 
+             </div>
+            </div><!-- COLUNA GRID -->
 
 		</article>
 
-	<footer class="row">         
+	<footer class="row">
+        <div class="col-md-12" id="footer1">
             <div class="col-md-2 col-xs-6">
               <button type="button" class="btn btn-link colo_btn" id="btn_fale_conosco">Fale Conosco</button>
               <button type="button" class="btn btn-link" id="btn_duvidas">Duvidas</button>  
@@ -86,6 +108,7 @@
               <button type="button" class="btn btn-link" id="btn_contato">Contato</button>
               <button type="button" class="btn btn-link" id="btn_sobre">Sobre</button>  
             </div>
+        </div>          
     </footer>
 	
 	</div>
@@ -96,5 +119,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/buscador.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/grid.js"></script>
 </body>
 </html>

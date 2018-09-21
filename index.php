@@ -10,11 +10,12 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
   <body>
+    
     <div class="container-fluid">
       
       <div class="row" id="logo">   
         <div class="col-md-offset-4 col-md-4" id="div_logo">
-          <img src="img/logo_04.png" class="img-responsive" alt="img logo"> 
+          <img src="img/NovaLogo.png" class="img-responsive" alt="img logo"> 
         </div>
       </div><!-- Logo -->
     
@@ -31,7 +32,7 @@
           </button>          
       </div><!-- Campo de Busca -->
 
-      <footer class="row">         
+      <footer class="row footer1">         
             <div class="col-md-2 col-xs-6">
               <button type="button" class="btn btn-link colo_btn" id="btn_fale_conosco">Fale Conosco</button>
               <button type="button" class="btn btn-link" id="btn_duvidas">Duvidas</button>  

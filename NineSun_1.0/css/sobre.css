@@ -1,11 +1,6 @@
 h1{
 	display: inline;
 }
-footer {
-    position:relative;
-    bottom:0;
-    width:100%;
-}
 figure
 {
 	margin: 20px 90px 30px 90px;
@@ -24,10 +19,11 @@ figure img
 }
 h2
 {
-	background-color: #bfbfbfbf;
+	background-color: #6cbcb2;
 	padding: 10px 10px 10px 10px;
 	margin-bottom: 25px;
 	margin-left: 0px;
+	color: white;
 }
 p
 {

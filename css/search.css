@@ -3,8 +3,9 @@ header{
 	background-color: whitesmoke;
 	z-index: 1;
 }
+
 #div_input{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 /* MENU */
@@ -12,9 +13,9 @@ header{
     background: #318ba2	 repeat left top;
     /*border-right:3px solid #4169E1;*/
     left: -350px;
-    overflow:auto;
-    position:fixed;
-    height: 100%;
+    overflow:visible;
+    position:absolute;
+    height: 80%;
     width: 300px;
     z-index: 1;
 }
@@ -61,6 +62,7 @@ footer .btn-link:hover{
 	border: 1px solid gold;
 }
 
+
 .icon-menu button:focus, #btn_fechar:focus{
 	color:black;
 }
@@ -102,14 +104,14 @@ footer .btn-link:hover{
 }
 
 #li_cidades, #li_classificacao, #li_acomidades{
-	font-size: 15px;
-	color: #8B0000;
+	font-size: 20px;
+	/*color: #8B0000;*/
 
 }
 
 #li_cidades li{
-    background-color: #FF8C00;
-    border-bottom:3px solid #FFA500;    
+   /* background-color: #FF8C00;
+    border-bottom:3px solid #FFA500;    */
 }
 
 /* ============================== Coisas Inuteis ============================== */
@@ -158,12 +160,19 @@ box-shadow: 0px 0px #DCDCDC;
 }
 
 #coluna_filter{
+    margin-right: 0px;
+    margin-left: 0px;
 
+}
+
+#coluna_grid{
+    margin-bottom: 300px;
 }
 
 /* ========================== Barra de BTNS filtros ========================== */
 #barra_btn_filter{
     background-color:#DCDCDC;
+    margin-top: 5px;
     padding-top: 3px;
     padding-bottom: 3px;
     border-radius: 30px;
@@ -183,53 +192,144 @@ box-shadow: 0px 0px #DCDCDC;
 /* ============================= GRID ================================== */
 
 #grid{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border:1px solid #b3b3b3; 
+    background-color:white ;
+    border-radius: 1px;
+
+}
+
+#img{
+    padding-left:0px;
+    padding-right:0px;
+   
+}
+
+#img_img{
+    max-height: 206px;
+    width: 310px;
+}
+
+#informacoes label{
+    display: block;
+}
+
+#informacoes button{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#btn_plus_info:focus, #btn_plus_info:active{
+    outline:0px solid transparent;
+    
+}
+
+#btn_plus_info:active{
+    color: gold;
+   
+}
+
+#coluna_grid{
+    position: relative;
+}
+
+
+#grid #img img{
+    border:1px solid #b3b3b3; 
+}
+
+#sub_grid{
     border:1px solid; 
     height: 250px; 
-    margin-top: 10px;
-    border:1px solid #b3b3b3; background-color:#DCDCDC ;
+    border:1px solid #b3b3b3; 
+    background-color:white ;
+    border-radius: 1px;
+    margin-bottom: 15px;
+}
+
+#btn-fechar{
+    right: 0;
+    position: absolute;
+    padding-top: 10px;
+}
+
+#btn-fechar:focus , #btn-fechar:active{
+    outline:0px solid transparent;
+
+}
+#btn-fechar:active{
+    color: gold;
+
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*CheckBox*/
+.customcheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Esconde o checkbox padrão do navegador */
+.customcheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Cria o checkbox custom */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
     border-radius: 5px;
-    }
+}
 
-#row_grid{
-    margin-left: auto;
-    margin-right: auto;
-    width: 616px;    
-}    
+/* On mouse-over, adiciona background cinza */
+.customcheck:hover input ~ .checkmark {
+    background-color: #ccc;
+}
 
-#img{ 
-    margin-top:15px;
+/* Com o checkBox checado, adiciona um fundo azul */
+.customcheck input:checked ~ .checkmark {
+    background-color: #23527c;
+    border-radius: 5px;
 }
-#informacoes{
-    margin-top:15px; 
-    margin-left: 15px; 
-    background-color:#DCDCDC;
-    border: 2px solid #b3b3b3;
-    border-radius: 15px;
-    height: 214px; }
 
-#title{
-    text-align: center;
+/* cria o checkmark/indicador (esconde quando não checado) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
 }
-#last_row{
-    padding-bottom:15px;
+
+/* Mostra a checkmark quando marcado */
+.customcheck input:checked ~ .checkmark:after {
+    display: block;
 }
-.uma_info{
-    padding-left: 20px; 
-    padding-top: 5px; 
-    padding-bottom: 5px;
-}
-#coluna_grid img{
-    height: 214px;
-    width: 230px;
-    border: 2px solid #b3b3b3;
-    border-radius: 20px;
-}
-#coluna_grid {
-    overflow:auto;
-    height: 450px;
-    margin-top: 15px;
-    border:0px solid black;
-    border-right: 0px;
-    border-left-style: 0px;
-    width: 100%;
+
+/* stiliza o checkmark/indicador */
+.customcheck .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }

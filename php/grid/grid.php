@@ -1,9 +1,9 @@
 <?php 
 include '../db_connection.php';
-$cidade = $_POST['cidade'];
-$classificacao = $_POST['classificacao'];
-$acomodidade = $_POST['acomodidade'];
-$keyword = $_POST['keyword'];
+$cidade = $_GET['cidade'];
+$classificacao = $_GET['classificacao'];
+$acomodidade = $_GET['acomodidade'];
+$keyword = $_GET['keyword'];
 
 
 $query = "SELECT nome,endereco,telefone,website,classificao FROM hoteis join cidades ON id_cidade = cidades.id join servicos ON id_servico = servicos.id WHERE ";
@@ -42,26 +42,37 @@ if(count($acomodidade) > 1){
 
 if(count($cidade) > 1 || count($acomodidade) > 1 || count($classificacao) > 1){
 $datareader = mysqli_query($connection,$query);
-
+$cont = 0;
 while($data = mysqli_fetch_row($datareader)){	
-    	
+    	$link = $data[3];
+    	$link = urlencode($link);
+    	$link = str_replace("+","",$link);
+    	$cont++;
+
     	$estrelas = getStar($data[4]);
 		$txt =  
-		"<div class=\"row\" id=\"row_grid\">
-			<div class=\"col-md-12\" id=\"grid\">			
-				<div class=\"col-md-5\" id=\"img\">
-					<img src=\"img/no_img.png\" >
-				</div>
-				<div class=\"col-md-6 teste\" id=\"informacoes\" >
-					<div class=\"row\" id=\"title\" ><h4><i>$data[0]</i></h4></div>
-					<div class=\"row uma_info\"><b>Endereço:</b> $data[1]</div>
-					<div class=\"row uma_info\"> <b>Telefone:</b> $data[2] </div>
-					<div class=\"row uma_info\"><b>Site: </b><a href=\"$data[3]\">$data[0] </a></div>
-					<div class=\"row uma_info\" id=\"last_row\"><b>Classificação: $estrelas</b></div>
-				</div>
-			</div>
-		</div>";
+		"<div id=\"row_grid\">
+                    <div class=\"col-md-12\" id=\"$cont.Grid\">           
+                        <div class=\"col-md-5\" id=\"img\">
+                            <img src=\"img/hhhh.jpg\" >
+                        </div>
+                        <div class=\"col-md-6\" id=\"informacoes\" >
+                            <div class=\"row\" id=\"title\" ><h4><i>$data[0]</i></h4></div>
+                            <div class=\"row uma_info\"><b>Endereço:</b> $data[1]</div>
+                            <div class=\"row uma_info\"> <b>Telefone:</b> $data[2] </div>
+                            <div class=\"row uma_info\"><b>Site:</b>
+                            <a target=\"_blanck\" href=\"http://$link\" >$data[0] </a>
+                            </div>
+                            <div class=\"row uma_info\" ><b>Classificação: $estrelas</b></div>
+                            <div class=\"row uma_info\" id=\"last_row\">
+                                <button type=\"button\" class=\"btn btn-link colo_btn\" id=\"$data[0]\" onclick=\"chamarSubMenu($data[0])\">Mais informações</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>";
+		
 		echo $txt;
+
 }
 
 }

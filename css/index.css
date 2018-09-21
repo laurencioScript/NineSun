@@ -12,7 +12,7 @@
 	margin-top: 35px;
 	z-index: 2;
 }
-
+comm
 #btn_search, #input{
 border-radius: 0px;
 box-shadow: 0px 10px #DCDCDC;
@@ -23,13 +23,32 @@ border:1px solid #318ba2;
 	 box-shadow: 5px 10px #DCDCDC;
 }
 
+/*---Joga o rodapé no final da pagina---*/
 footer{
-	bottom: 0;
-	position: absolute;
-	width:100%;
 	background-color: #DCDCDC;
 	border-top: 1px #A9A9A9 solid;
+	position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
+html
+{
+	position: relative;
+	min-height: 100%;
+}
+body
+{
+	margin: 0 0 60px;
+}
+/*-------------------------------------*/
+
+.footer1{
+	top: 100%;
+	width: 100%;
+	position:absolute;
+}
+
+
 
 header h1{
 	display: inline;

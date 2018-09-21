@@ -1,4 +1,4 @@
-
+<!-- 
 <li><div class="col-md-offset-2">
 	<input class="form-check-input" type="checkbox" id="wifi_nos_quartos" value="Wifi nos Quartos">
 	<label class="form-check-label" for="exampleRadios1">Wifi nos Quartos</label>	
@@ -34,4 +34,70 @@
 <li><div class="col-md-offset-2">
 	<input class="form-check-input" type="checkbox" id="pet_permitido" value="Pet Permitido">
 	<label class="form-check-label" for="exampleRadios1">Pet Permitido</label>	
+</div></li>
+ -->
+
+
+<!-- Novo CheckBox -->
+<li><div class="col-md-offset-2">
+	<label class="customcheck">Wifi nos Quartos
+		<input type="checkbox" id="wifi_nos_quartos" value="Wifi nos Quartos">
+		<span class="checkmark"></span>
+	</label>
+</div></li>
+
+<li><div class="col-md-offset-2">
+	<label class="customcheck">Wifi no Lobby
+		<input type="checkbox" id="wifi_no_lobby" value="Wifi no Lobby">
+		<span class="checkmark"></span>
+	</label>
+</div></li>
+
+<li><div class="col-md-offset-2">
+	<label class="customcheck">Piscina
+		<input type="checkbox" id="Piscina" value="Piscina">
+		<span class="checkmark"></span>
+	</label>
+</div></li>
+
+<li><div class="col-md-offset-2">
+	<label class="customcheck">Estacionamento
+		<input type="checkbox" id="Estacionamento" value="Estacionamento">
+		<span class="checkmark"></span>
+	</label>
+</div></li>
+
+<li><div class="col-md-offset-2">
+	<label class="customcheck">Academia
+		<input type="checkbox" id="Academia" value="Academia">
+		<span class="checkmark"></span>
+	</label>
+</div></li>
+
+<li><div class="col-md-offset-2">
+	<label class="customcheck">Spa
+		<input type="checkbox" id="Spa" value="Spa">
+		<span class="checkmark"></span>
+	</label>
+</div></li>
+
+<li><div class="col-md-offset-2">
+	<label class="customcheck">Bar no Hotel
+		<input type="checkbox" id="bar_no_hotel" value="Bar no Hotel">
+		<span class="checkmark"></span>
+	</label>
+</div></li>
+
+<li><div class="col-md-offset-2">
+	<label class="customcheck">Restaurante
+		<input type="checkbox" id="Restaurante" value="Restaurante">
+		<span class="checkmark"></span>
+	</label>
+</div></li>
+
+<li><div class="col-md-offset-2">
+	<label class="customcheck">Pet Permitido
+		<input type="checkbox" id="pet_permitido" value="Pet Permitido">
+		<span class="checkmark"></span>
+	</label>
 </div></li>

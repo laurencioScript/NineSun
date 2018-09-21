@@ -11,9 +11,7 @@ join cidades ON id_cidade =cidades.id ;
 
 
 
-select nome,endereco,telefone,website,classificao,cidade from hoteis  
-join cidades ON id_cidade = cidades.id 
-where cidade IN('São Vicente');
+
 
 SELECT nome FROM hoteis WHERE nome LIKE 's%'  
 UNION
@@ -31,11 +29,12 @@ join servicos ON id_servico = servicos.id  where wifi_nos_quartos = 1;
 */
 
 
+SELECT nome,endereco,telefone,website,classificao,cidade FROM hoteis join cidades ON id_cidade = cidades.id join servicos ON id_servico = servicos.id 
+WHERE classificao = '2';
 
 insert into tipos(tipo) values ('hotel');
 insert into tipos(tipo) values ('pousada');
 
-select * from tipos;
 
 insert into cidades(cidade) values ('Bertioga'); 
 insert into cidades(cidade) values ('Cubatão'); 
