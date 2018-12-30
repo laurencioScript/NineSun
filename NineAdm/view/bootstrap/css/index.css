@@ -1,0 +1,35 @@
+#conteudo{
+/* border:1px solid black;*/  
+}
+
+.centro{
+	text-align: center;
+}
+.direita{
+	text-align: right;
+}
+
+#form-login{
+	
+}
+
+.login{
+	margin-top: 30px;
+	text-align: left;
+}
+
+
+
+#lista{
+	text-align: center;
+}
+
+.radioTipo{
+margin-right: 10px;
+padding-right: 10px;
+}
+
+.checkbox-servico{
+	padding-right: 5px;
+	margin-right: 5px;
+}

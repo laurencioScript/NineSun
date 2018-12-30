@@ -1,0 +1,19 @@
+header{
+	margin: 0px 0px 5px 0px;
+}
+header img{
+	margin-left: 25px;
+}
+
+h1{
+	display: inline;
+}
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+#rodape_direita
+{
+	text-align: right;
+}
