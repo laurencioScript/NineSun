@@ -1,4 +1,4 @@
-# baixada_Hoteis
+# Nine Sun
 Projeto de iniciação científica, do IFSP - Campus Cubatão.
 
 Integrantes:
