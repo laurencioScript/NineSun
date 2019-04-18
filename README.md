@@ -1,4 +1,4 @@
-// Participei desse projeto no 2º semestre da faculdade em 2018
+// Participei desse projeto durante o 2º semestre até o 3º semestre da faculdade em 2018
 # Nine Sun
 Projeto de iniciação científica, do IFSP - Campus Cubatão.
 
