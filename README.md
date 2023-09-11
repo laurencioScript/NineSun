@@ -1,4 +1,4 @@
-# Projeto Nine Sun
+# Nine Sun
 
 Participei deste projeto durante o 2º semestre até o 3º semestre da faculdade em 2018.
 
